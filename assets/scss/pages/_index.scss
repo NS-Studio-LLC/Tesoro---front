@@ -1,0 +1,286 @@
+.homepage-container {
+    background-color: #efefef;
+
+    .hero-container {
+        position: relative;
+
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+
+            .discount {
+                display: flex;
+                align-items: center;
+                gap: 24px;
+                margin-bottom: 50px;
+
+                .discount-percent {
+                    font-size: 48px;
+                    color: #D4AF37;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 12px;
+
+                        &:first-child {
+                            font-size: 20px;
+                            color: #fff;
+                        }
+
+                        &:last-child {
+                            font-size: 36px;
+                            color: #D4AF37;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .slogan {
+                color: #fff;
+
+                .hightlight {
+                    color: #D4AF37;
+                }
+            }
+
+        }
+
+
+
+    }
+
+    .what-we-sell {
+        padding: 50px 40px 100px 40px;
+
+        .products {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .product-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .product-img {
+                    width: fit-content;
+                    height: 150px;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .swiper-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .section-title {
+            font-size: 36px;
+            align-self: flex-start;
+            margin-left: 30px;
+        }
+    }
+
+    .swiper-container {
+        padding: 24px 24px 40px;
+        padding: 0;
+        position: relative;
+        width: 95%;
+
+
+
+        .product-swiper {
+            margin-top: 50px;
+        }
+    }
+
+    .billboards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        padding: 0 30px;
+
+
+        .billboard {
+            border-radius: 12px;
+            background-color: #fff;
+            box-shadow: 4px 4px 7px -1px rgba(0, 0, 0, 0.59);
+            width: 50%;
+            padding: 40px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-title {
+                font-size: 24px;
+                font-weight: 500;
+                display: flex;
+                flex-direction: column;
+
+                .hightlight {
+                    color: #D4AF37;
+                    font-size: 32px;
+                    font-weight: 600;
+                }
+
+                .get {
+                    padding: 12px;
+                    font-size: 16px;
+                    color: #fff;
+                    background-color: #D4AF37;
+                    width: fit-content;
+                    border-radius: 12px;
+                    margin-top: 24px;
+                }
+            }
+
+            .get {
+                padding: 12px;
+
+            }
+        }
+    }
+
+    .house-and-decoration {
+        padding: 40px 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .section-left {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 50%;
+
+            .section-title {
+                font-size: 32px;
+                font-weight: 600;
+                width: fit-content;
+                border-bottom: 1px solid black;
+            }
+
+            .category-button {
+                padding: 12px;
+                color: #fff;
+                background-image: linear-gradient(to bottom, #d4af37, #cea72d, #c79e22, #c19615, #ba8e02);
+                border-radius: 12px;
+                min-width: 100px;
+                max-width: fit-content;
+                text-align: center;
+            }
+
+            .product-images {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-top: 12px;
+
+                .product-img {
+                    width: 140px;
+                    height: 140px;
+                    border-radius: 12px;
+                    overflow: hidden;
+
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .btn-more {
+            padding: 12px;
+            text-align: center;
+            color: #fff;
+            background-color: #000;
+            border-radius: 12px;
+            margin-top: auto;
+            text-wrap: nowrap;
+        }
+
+        .section-right {
+            width: 50%;
+            display: flex;
+
+            .img-div {
+                width: 315px;
+                height: 380px;
+                border-radius: 12px;
+                overflow: hidden;
+                margin-left: auto;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+    }
+
+    .our-catalogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 20px 30px;
+
+        .section-title {
+            font-size: 36px;
+        }
+
+        .catalogs {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 24px;
+
+            .catalog {
+                width: 50%;
+                height: 328px;
+                box-shadow: 4px 4px 7px -1px rgba(0, 0, 0, 0.59);
+                border-radius: 12px;
+                background-color: #fff;
+                padding: 24px;
+            }
+
+        }
+
+        .btn-more {
+            padding: 12px;
+            text-align: center;
+            color: #fff;
+            border-radius: 12px;
+            background-color: #D4AF37;
+            margin-top: 24px;
+        }
+    }
+}

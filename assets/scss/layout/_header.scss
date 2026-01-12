@@ -1,0 +1,126 @@
+header {
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 3px solid #efefef;
+
+
+    .menu-icon {
+        cursor: pointer;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        cursor: pointer;
+
+        .search-div {
+            height: 40px;
+            width: 40px;
+            border-radius: 999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: width 0.25s ease;
+            box-shadow: 0px 0px 10px -5px #000000;
+
+            .search-icon {
+                width: 20px;
+                height: 20px;
+                flex: 0 0 auto;
+                position: relative;
+                z-index: 2;
+            }
+
+            .search-input {
+                position: absolute;
+                left: 44px;
+                right: 12px;
+                top: 50%;
+                transform: translateY(-50%);
+
+                border: 0;
+                outline: 0;
+                background: transparent;
+                color: #fff;
+
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.2s ease;
+            }
+
+            &.is-open {
+                width: 260px;
+                justify-content: flex-start;
+                padding-left: 12px;
+
+                .search-input {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            }
+        }
+
+        .plus-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px;
+            background-color: #977300;
+            border-radius: 50%;
+        }
+
+        .profile-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #dedede;
+            padding-right: 24px;
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        .favorite-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid #dedede;
+            padding-right: 24px;
+
+            img {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        .btn-group{
+
+            .dropdown-toggle{
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding: 0 !important;
+
+                &::after{
+                    display: none;
+                }
+
+                &:focus{
+                    border: none;
+                }
+            }
+        }
+
+    }
+
+}

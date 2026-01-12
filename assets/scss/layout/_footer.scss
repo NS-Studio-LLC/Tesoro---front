@@ -1,0 +1,52 @@
+footer{
+    padding: 48px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-left{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .slogan{
+            font-size: 15px;
+        }
+    }
+
+    .footer-right{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .contact-infos{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+
+            .info-div{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                span{
+                    font-weight: 500;
+                }
+
+            }
+        }
+
+        .actions{
+            display: flex;
+            align-items: center;
+            gap: 24px;
+
+            a{
+                color: #000;
+            }
+        }
+    }
+
+
+}

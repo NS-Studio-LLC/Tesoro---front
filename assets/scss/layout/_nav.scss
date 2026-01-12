@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top: 2px solid #efefef;
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 90px;
+
+        .nav-link {
+            font-weight: 500;
+        }
+
+        .active {
+            color: #B08808;
+        }
+    }
+}

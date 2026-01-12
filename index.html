@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Təməl viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Zoom meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tesero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="homepage-container">
+
+    <!-- topbar -->
+    <div class="topbar">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="">
+        </div>
+    </div>
+
+    <!-- header -->
+    <header>
+
+        <div class="menu-icon">
+            <img src="assets/icons/menu.svg" alt="">
+        </div>
+
+        <div class="header-actions">
+
+            <div class="search-div" id="searchBox">
+                <img src="assets/icons/search.svg" alt="Search" class="search-icon">
+                <input type="text" placeholder="Axtar..." class="search-input" />
+            </div>
+
+            <div class="plus-div">
+                <img src="assets/icons/plus.svg" alt="">
+            </div>
+
+            <div class="profile-div">
+                <img src="assets/icons/profil.svg" alt="">
+            </div>
+
+            <div class="favorite-div">
+                <img src="assets/icons/favorite.svg" alt="">
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    AZ
+                    <img src="assets/icons/arrow-down.svg" alt="">
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">En</a></li>
+                    <li><a class="dropdown-item" href="#">Ru</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- navbar -->
+    <nav>
+        <ul class="nav-links">
+            <a href="index.html" class="nav-link active">Ana Səhifə</a>
+            <a href="products.html" class="nav-link">Məhsullar</a>
+            <a href="catalog.html" class="nav-link">Kataloq</a>
+            <a href="aboutUs.html" class="nav-link">Haqqımızda</a>
+            <a href="blog.html" class="nav-link">Bloq</a>
+            <a href="contact.html" class="nav-link">Əlaqə</a>
+        </ul>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero-container">
+
+        <img src="assets/images/hero.png" alt="">
+
+        <div class="hero-text">
+
+            <div class="discount">
+                <span class="discount-percent">10%</span>
+                <div>
+                    <span>Seçilmiş məhsullara</span>
+                    <span>Endirim!</span>
+                </div>
+            </div>
+
+            <span class="slogan">Kombi • Oboy • Kafel • Laminat • Pərdə • Qapı - Hər biri <span
+                    class="hightlight">Tesoro</span>’da</span>
+
+
+        </div>
+
+    </div>
+
+    <!-- what we sell -->
+    <div class="what-we-sell">
+
+        <div class="products">
+
+            <div class="product-div">
+                <div class="product-img">
+                    <img src="assets/images/combii.png" alt="">
+                </div>
+
+                <span class="product-name">Kombi</span>
+            </div>
+
+            <div class="product-div">
+                <div class="product-img">
+                    <img src="assets/images/mask.png" alt="">
+                </div>
+
+                <span class="product-name">Oboy</span>
+            </div>
+
+            <div class="product-div">
+                <div class="product-img">
+                    <img src="assets/images/rectanglee.png" alt="">
+                </div>
+
+                <span class="product-name">Laminat</span>
+            </div>
+
+            <div class="product-div">
+                <div class="product-img">
+                    <img src="assets/images/kafel.png" alt="">
+                </div>
+
+                <span class="product-name">Kafel</span>
+            </div>
+
+            <div class="product-div">
+                <div class="product-img">
+                    <img src="assets/images/door.png    " alt="">
+                </div>
+
+                <span class="product-name">Qapı</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- products swiper -->
+    <div class="swiper-section">
+
+        <span class="section-title">Məhsullar</span>
+
+        <div class="swiper-container">
+
+            <div class="swiper product-swiper" id="productSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide -->
+                    <div class="swiper-slide">
+                        <div class="product-card">
+
+                            <button class="fav-btn" type="button" aria-label="Favorit">
+                                <img src="assets/icons/favorite.svg" alt="">
+                            </button>
+
+                            <div class="img-wrap">
+                                <img src="assets/images/door1.png" alt="Məhsul" />
+                            </div>
+
+                            <div class="infos">
+                                <p class="title">Seyf qapı</p>
+                                <p class="old-price">399,99 ₼</p>
+                                <p class="new-price">299,99 ₼</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card">
+
+                            <button class="fav-btn" type="button" aria-label="Favorit">
+                                <img src="assets/icons/favorite.svg" alt="">
+                            </button>
+
+                            <div class="img-wrap">
+                                <img src="assets/images/door1.png" alt="Məhsul" />
+                            </div>
+
+                            <div class="infos">
+                                <p class="title">Seyf qapı</p>
+                                <p class="old-price">399,99 ₼</p>
+                                <p class="new-price">299,99 ₼</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card">
+
+                            <button class="fav-btn" type="button" aria-label="Favorit">
+                                <img src="assets/icons/favorite.svg" alt="">
+                            </button>
+
+                            <div class="img-wrap">
+                                <img src="assets/images/door1.png" alt="Məhsul" />
+                            </div>
+
+                            <div class="infos">
+                                <p class="title">Seyf qapı</p>
+                                <p class="old-price">399,99 ₼</p>
+                                <p class="new-price">299,99 ₼</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card">
+
+                            <button class="fav-btn" type="button" aria-label="Favorit">
+                                <img src="assets/icons/favorite.svg" alt="">
+                            </button>
+
+                            <div class="img-wrap">
+                                <img src="assets/images/door1.png" alt="Məhsul" />
+                            </div>
+
+                            <div class="infos">
+                                <p class="title">Seyf qapı</p>
+                                <p class="old-price">399,99 ₼</p>
+                                <p class="new-price">299,99 ₼</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="product-card">
+
+                            <button class="fav-btn" type="button" aria-label="Favorit">
+                                <img src="assets/icons/favorite.svg" alt="">
+                            </button>
+
+                            <div class="img-wrap">
+                                <img src="assets/images/door1.png" alt="Məhsul" />
+                            </div>
+
+                            <div class="infos">
+                                <p class="title">Seyf qapı</p>
+                                <p class="old-price">399,99 ₼</p>
+                                <p class="new-price">299,99 ₼</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Custom nav buttons -->
+            <button class="nav-btn nav-prev" type="button" aria-label="Prev">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M4 12H20M4 12L8 8M4 12L8 16" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </button>
+
+            <button class="nav-btn nav-next" type="button" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke="#fff" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- billboards -->
+    <div class="billboards">
+        <div class="billboard">
+
+            <div class="billboard-title">
+                <span>Laminat görünümlü <br> <span class="hightlight">Kafellər</span></span>
+
+                <a href="#" class="get">Əldə edin</a>
+
+            </div>
+
+            <div class="billboard-image">
+                <img src="assets/images/billboard-img.png" alt="">
+            </div>
+
+
+        </div>
+
+        <div class="billboard">
+
+            <div class="billboard-title">
+                <span>Laminat görünümlü <br> <span class="hightlight">Kafellər</span></span>
+
+                <a href="#" class="get">Əldə edin</a>
+
+            </div>
+
+            <div class="billboard-image">
+                <img src="assets/images/billboard-img.png" alt="">
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- house and decoration -->
+    <div class="house-and-decoration">
+
+        <div class="section-left">
+            <div class="section-title">Ev & Dekorasiya</div>
+
+            <a href="#" class="category-button">Pərdələr</a>
+            <a href="#" class="category-button">Qapılar</a>
+
+            <div class="product-images">
+                <div class="product-img">
+                    <img src="assets/images/bedroom.jpg" alt="">
+                </div>
+                <div class="product-img">
+                    <img src="assets/images/bedroom.jpg" alt="">
+                </div>
+                <div class="product-img">
+                    <img src="assets/images/perde.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn-more">Daha çox</a>
+
+        <div class="section-right">
+
+            <div class="img-div">
+                <img src="assets/images/bedroom.jpg" alt="">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- our catalogs -->
+
+    <div class="our-catalogs">
+
+        <div class="section-title">Kataloqlarımız</div>
+
+        <div class="catalogs">
+
+            <div class="catalog">
+                kataloq
+            </div>
+
+            <div class="catalog">
+                kataloq
+            </div>
+
+        </div>
+
+        <a href="#" class="btn-more">Daha çox</a>
+
+    </div>
+
+
+    <footer>
+
+        <div class="footer-left">
+
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+
+            <span class="slogan">Fərqli dizaynlar, yüksək keyfiyyət, unikal interyer – hər şey sizin üçün.</span>
+
+        </div>
+
+        <div class="footer-right">
+
+            <div class="contact-infos">
+
+                <div class="info-div">
+                    <img src="assets/icons/whatsApp.png" alt="">
+                    <span>+994 10 308 70 78</span>
+                </div>
+
+                <div class="info-div">
+                    <img src="assets/icons/phone.png" alt="">
+                    <span>+994 10 308 70 78</span>
+                </div>
+
+                <div class="info-div">
+                    <img src="assets/icons/internet.png" alt="">
+                    <span>+994 10 308 70 78</span>
+                </div>
+
+                <div class="info-div">
+                    <img src="assets/icons/letter.png" alt="">
+                    <span>+994 10 308 70 78</span>
+                </div>
+
+            </div>
+
+            <div class="actions">
+                <a href="contactUs.html">Əlaqə</a>
+                <a href="catalog.html">Kataloq</a>
+                <a href="aboutUs.html">Haqqımızda</a>
+                <a href="privacyAndPolicy.html">Məxfilik siyasəti</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- bottom bar -->
+    <div class="bottom-bar">
+
+        <div class="copyright">
+            <img src="assets/icons/copyright.png" alt="">
+            <span>2025 - Tesoro - Bütün hüquqlar qorunur</span>
+        </div>
+
+        <div class="social-medias">
+            <a href="">
+                <img src="assets/icons/instagram.png" alt="">
+            </a>
+            <a href="">
+                <img src="assets/icons/facebook.png" alt="">
+            </a>
+            <a href="">
+                <img src="assets/icons/tiktok.png" alt="">
+            </a>
+            <a href="">
+                <img src="assets/icons/linkedin.png" alt="">
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/searchInput.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <!-- <script>
+        new Swiper("#productSwiper", {
+            slidesPerView: 4,
+            spaceBetween: 22,
+            speed: 500,
+            loop: false, // şəkildəki kimi: əvvəlcə prev görünməsin
+            navigation: {
+                nextEl: ".nav-next",
+                prevEl: ".nav-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: { slidesPerView: 1.2, spaceBetween: 14 },
+                520: { slidesPerView: 2.2, spaceBetween: 16 },
+                900: { slidesPerView: 3.2, spaceBetween: 18 },
+                1200: { slidesPerView: 4, spaceBetween: 22 },
+            },
+        });
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.bottom-bar {
+    padding: 30px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background-color: #B49532;
+
+    .copyright{
+        span{
+            font-weight: 500;
+        }
+    }
+}
