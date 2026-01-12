@@ -3,8 +3,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    border-top: 3px solid #efefef;
+    border-top: 2px solid #dedede;
+    border-bottom: 3px solid #dedede;
 
 
     .menu-icon {
@@ -102,20 +102,20 @@ header {
             }
         }
 
-        .btn-group{
+        .btn-group {
 
-            .dropdown-toggle{
+            .dropdown-toggle {
                 font-size: 22px;
                 display: flex;
                 align-items: center;
                 gap: 12px;
                 padding: 0 !important;
 
-                &::after{
+                &::after {
                     display: none;
                 }
 
-                &:focus{
+                &:focus {
                     border: none;
                 }
             }

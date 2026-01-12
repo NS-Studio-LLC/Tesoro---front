@@ -35,7 +35,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 3px solid #efefef;
+  border-top: 2px solid #dedede;
+  border-bottom: 3px solid #dedede;
 }
 header .menu-icon {
   cursor: pointer;
@@ -198,7 +199,6 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 10px;
-  border-top: 2px solid #efefef;
 }
 nav .nav-links {
   display: flex;
