@@ -1,0 +1,20 @@
+.select {
+  background-color: #fff;
+  padding: 8px 40px 8px 12px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border: 1px solid #ccc;
+
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("/assets/icons/select-icon.png");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+
+  &::-ms-expand {
+    display: none;
+  }
+}

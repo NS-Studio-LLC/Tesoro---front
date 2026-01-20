@@ -10,12 +10,15 @@
 @use './layout/topbar';
 @use './layout/bottombar';
 @use './layout/nav';
+@use './layout/breadcrumb';
 
 // components
 @use './components/swiper';
 @use './components/cards/productCard';
+@use './components/selects/select';
 
 // pages
 @use './pages/index';
+@use './pages/productList';
 
 @use './pages/test';

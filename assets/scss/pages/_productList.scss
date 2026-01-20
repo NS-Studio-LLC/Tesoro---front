@@ -1,0 +1,15 @@
+.product-list-container {
+
+    .filters-container {
+        padding: 10px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+
+        select {
+            flex-grow: 1;
+        }
+    }
+
+}
