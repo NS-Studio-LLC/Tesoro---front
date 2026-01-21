@@ -14,11 +14,21 @@
 
 // components
 @use './components/swiper';
+// cards
 @use './components/cards/productCard';
+@use './components/cards/blogCard';
+@use './components/cards/pagination';
+// selects
 @use './components/selects/select';
+// inputs
+@use './components/inputs/inputWithLabel';
+// buttons
+@use './components/buttons/formButton';
 
 // pages
 @use './pages/index';
 @use './pages/productList';
+@use './pages/blogs';
+@use './pages/login';
 
 @use './pages/test';

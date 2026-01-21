@@ -146,7 +146,18 @@ footer {
 footer .footer-left {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
+}
+footer .footer-left .logo {
+  height: 65px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .footer-left .logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 footer .footer-left .slogan {
   font-size: 15px;
@@ -166,13 +177,19 @@ footer .footer-right .contact-infos .info-div {
   align-items: center;
   gap: 12px;
 }
+footer .footer-right .contact-infos .info-div a {
+  color: #000;
+  font-weight: 500;
+}
 footer .footer-right .contact-infos .info-div span {
   font-weight: 500;
 }
 footer .footer-right .actions {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 24px;
+  width: 100%;
 }
 footer .footer-right .actions a {
   color: #000;
@@ -180,9 +197,17 @@ footer .footer-right .actions a {
 
 .topbar {
   display: flex;
-  padding: 10px;
   justify-content: center;
   background-color: #fff;
+}
+.topbar .logo {
+  height: 60px;
+}
+.topbar .logo img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
 
 .bottom-bar {
@@ -202,11 +227,14 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  background-color: #fff;
 }
 nav .nav-links {
   display: flex;
   align-items: center;
   gap: 90px;
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 nav .nav-links .nav-link {
   font-weight: 500;
@@ -296,15 +324,18 @@ nav .nav-links .active {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 24px;
   justify-content: space-between;
+  align-items: center;
+}
+.product-card div {
+  width: 100%;
 }
 .product-card .fav-btn {
   position: absolute;
   top: 12px;
-  right: 12px;
-  width: 30px;
-  height: 30px;
+  right: 24px;
+  width: 20px;
+  height: 20px;
   border: 0;
   background: transparent;
   cursor: pointer;
@@ -312,6 +343,7 @@ nav .nav-links .active {
   place-items: center;
 }
 .product-card .img-wrap {
+  width: 90%;
   height: 250px !important;
   overflow: hidden;
   border-radius: 16px;
@@ -328,6 +360,7 @@ nav .nav-links .active {
   flex-direction: column;
   gap: 6px;
   padding-top: 8px;
+  margin-top: 24px;
 }
 .product-card .infos .title {
   color: #111;
@@ -344,6 +377,114 @@ nav .nav-links .active {
   color: #e10000;
   font-weight: 700;
   margin: 0;
+}
+.product-card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.product-card .card-footer .views {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.product-card .card-footer .views img {
+  width: 12px;
+  height: 12px;
+}
+.product-card .card-footer .views span {
+  font-size: 12px;
+  color: #868686;
+}
+.product-card .card-footer .date {
+  text-align: right;
+}
+.product-card .card-footer .date span {
+  font-size: 12px;
+  color: #868686;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.blog-card .blog-img {
+  height: 209px;
+}
+.blog-card .blog-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.blog-card .blog-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog-card .blog-body .blog-infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 12px;
+}
+.blog-card .blog-body .blog-infos span {
+  font-size: 12px;
+  color: #868686;
+}
+.blog-card .blog-body .blog-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 24px;
+}
+.blog-card .blog-body .btn-pass {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 12px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 12px;
+  padding: 12px;
+  font-weight: 500;
+  box-shadow: 1px 2px 12px 1px rgba(0, 0, 0, 0.45);
+}
+.blog-card .views {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+}
+.blog-card .views span {
+  font-size: 12px;
+  color: #868686;
+}
+
+.pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 32px;
+  padding: 16px;
+  border-radius: 12px;
+}
+.pagination-bar button {
+  padding: 8px 12px;
+  border: 1px solid #dedede;
+  border-radius: 12px;
+  background-color: transparent;
+  font-size: 14px;
 }
 
 .select {
@@ -362,6 +503,30 @@ nav .nav-links .active {
 }
 .select::-ms-expand {
   display: none;
+}
+
+.input-with-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input-with-label label {
+  font-weight: 500;
+  font-size: 14px;
+}
+.input-with-label input {
+  border: 1px solid #dedede;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.form-button {
+  padding: 8px;
+  border-radius: 12px;
+  border: none;
+  background-color: #977300;
+  color: #fff;
+  font-size: 16px;
 }
 
 .homepage-container {
@@ -614,4 +779,51 @@ nav .nav-links .active {
 }
 .product-list-container .filters-container select {
   flex-grow: 1;
+}
+.product-list-container .products-container {
+  padding: 40px 50px;
+}
+.product-list-container .products-container .products {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+}
+
+.blogs-list-container .blogs-container {
+  padding: 40px 100px;
+}
+.blogs-list-container .blogs-container .blogs {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.login-page-container .login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  gap: 32px;
+}
+.login-page-container .login-container .page-title {
+  font-size: 36px;
+  font-weight: 500;
+}
+.login-page-container .login-container .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 40px;
+  width: 40%;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.login-page-container .login-container .login-form .input-with-label {
+  width: 60%;
+}
+.login-page-container .login-container .login-form .form-button {
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */

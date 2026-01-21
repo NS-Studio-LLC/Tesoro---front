@@ -1,0 +1,15 @@
+.blogs-list-container {
+
+    .blogs-container {
+        padding: 40px 100px;
+
+
+        .blogs {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+        }
+
+    }
+}
