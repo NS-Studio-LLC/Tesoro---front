@@ -42,6 +42,7 @@ header {
 }
 header .menu-icon {
   cursor: pointer;
+  position: relative;
 }
 header .header-actions {
   display: flex;
@@ -530,6 +531,19 @@ nav .nav-links .active {
   font-size: 16px;
 }
 
+.menu-dropdown {
+  padding: 24px;
+  background-color: #fff;
+  position: absolute;
+}
+.menu-dropdown .dropdown-item img {
+  width: 12px;
+  height: 12px;
+}
+.menu-dropdown .dropdown-item .arrrow {
+  width: 24px;
+  height: 24px;
+}
 .homepage-container {
   background-color: #efefef;
 }
