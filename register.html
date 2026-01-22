@@ -15,7 +15,7 @@
 
 <body>
 
-    <div class="login-page-container">
+    <div class="register-page-container">
         <!-- topbar start -->
         <div class="topbar">
             <div class="logo">
@@ -79,13 +79,17 @@
         </nav>
         <!-- navbar end -->
 
-        <!-- login start -->
-        <div class="login-container">
+        <!-- register start -->
+        <div class="register-container">
 
-            <span class="page-title">Giriş</span>
+            <span class="page-title">Qeydiyyat</span>
 
-            <div class="login-form">
+            <div class="register-form">
 
+                <div class="input-with-label">
+                    <label for="name">Ad</label>
+                    <input name="name" type="text" placeholder="Adınızı daxil edin">
+                </div>
 
                 <div class="input-with-label">
                     <label for="email">Email</label>
@@ -97,20 +101,23 @@
                     <input name="password" type="password" placeholder="Şifrənizi daxil edin">
                 </div>
 
-                <button class="form-button">Giriş edin</button>
+                <div class="input-with-label">
+                    <label for="confirm_password">Şifrə təkrarı</label>
+                    <input name="confirm_password" type="password" placeholder="Şifrənizi yenidən daxil edin">
+                </div>
 
-                <div class="login-actions">
-                    <a href="register.html">Qeydiyyat</a>
+                <button class="form-button">Qeydiyyat</button>
+
+                <div class="register-actions">
+                    <a href="login.html">Giriş</a>
                     <a href="forgotPassword.html">Şifrəmi unutdum</a>
                 </div>
 
 
             </div>
 
-
-
         </div>
-        <!-- login end -->
+        <!-- register end -->
 
         <!-- footer start -->
         <footer>
