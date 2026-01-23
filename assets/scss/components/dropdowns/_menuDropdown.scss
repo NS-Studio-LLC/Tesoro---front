@@ -1,21 +1,89 @@
-.menu-dropdown{
-    padding: 24px;
-    background-color: #fff;
-    position: absolute;
+// .menu-dropdown {
+//     padding: 24px;
+//     background-color: #fff;
+//     position: absolute;
+//     left: -60px;
+//     display: flex;
+//     flex-direction: column;
+//     z-index: 9;
+//     max-width: 360px;
+//     min-width: 360px;
 
-    .dropdown-item{
-        img{
-            width: 12px;
-            height: 12px;
+//     .dropdown-item {
+//         display: flex;
+//         align-items: center;
+//         transition: all .2s ease-in;
+
+//         &:hover {
+//             transform: scale(1.1);
+
+//             span {
+//                 color: #977300;
+//             }
+//         }
+
+//         img {
+//             width: 50px;
+//             height: 50px;
+//         }
+
+//         .arrow {
+//             width: 24px;
+//             height: 24px;
+//             margin-left: auto;
+//         }
+
+//         span {
+//             font-weight: 500;
+//         }
+//     }
+
+// }
+
+// .is-menu-open {
+//     display: none !important;
+// }
+
+.menu-dropdown {
+    border: none;
+    position: relative;
+
+    .dropdown-menu {
+        background-color: #fff;
+        position: absolute;
+        left: -60px !important;
+        min-width: 360px;
+        overflow: hidden;
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            transition: all .2s ease-in;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: #fff;
+
+                span {
+                    color: #977300;
+                }
+            }
+
+            img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .arrow {
+                width: 24px;
+                height: 24px;
+                margin-left: auto;
+            }
+
+            span {
+                font-weight: 500;
+            }
         }
 
-        .arrrow{
-            width: 24px;
-            height: 24px;
-        }
-
-        span{
-
-        }
     }
 }

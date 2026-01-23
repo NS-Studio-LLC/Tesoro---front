@@ -10,6 +10,12 @@ header {
     .menu-icon {
         cursor: pointer;
         position: relative;
+        border: none !important;
+        background-color: transparent;
+
+        &::after{
+            display: none;
+        }
     }
 
     .header-actions {

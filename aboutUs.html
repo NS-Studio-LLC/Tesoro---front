@@ -1,11 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Təməl viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <!-- Zoom meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Tesero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+
+    <div class="about-us-page-container">
+
+        <!-- topbar start -->
+        <div class="topbar">
+            <div class="logo">
+                <img src="assets/images/tesero-logo-png.png" alt="">
+            </div>
+        </div>
+        <!-- topbar end -->
+
+        <!-- header start -->
+        <header>
+
+            <div class="dropdown menu-dropdown">
+
+                <button class="dropdown-toggle menu-icon" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/icons/menu.svg" alt="">
+                </button>
+
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <a href="#" class="dropdown-item">
+                        <img src="assets/icons/combi-icon.png" alt="">
+                        <span>Kombi sistemləri</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+
+                    <a href="#" class="dropdown-item">
+                        <img src="assets/icons/wallpaper-icon.png" alt="">
+                        <span>Divar kağızları</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+
+                    <a href="#" class="dropdown-item">
+                        <img src="assets/icons/wall-icon.png" alt="">
+                        <span>Divar panelləri</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="assets/icons/comb-icon.png" alt="">
+                        <span>Dekorativ daraqlar</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="assets/icons/glue-icon.png" alt="">
+                        <span>Yapışdırıcılar</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="assets/icons/curtain-icon.png" alt="">
+                        <span>Pərdələr</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="assets/icons/door-icon.png" alt="">
+                        <span>Qapılar</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        <img src="assets/icons/parcet-icon.png" alt="">
+                        <span>Döşəmə örtükləri</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                </ul>
+
+            </div>
+
+            <div class="header-actions">
+
+                <div class="search-div" id="searchBox">
+                    <img src="assets/icons/search.svg" alt="Search" class="search-icon">
+                    <input type="text" placeholder="Axtar..." class="search-input" />
+                </div>
+
+                <a class="plus-div">
+                    <img src="assets/icons/plus.svg" alt="">
+                </a>
+
+                <a class="profile-div">
+                    <img src="assets/icons/profil.svg" alt="">
+                </a>
+
+                <a href="favorites.html" class="favorite-div">
+                    <img src="assets/icons/favorite.svg" alt="">
+                </a>
+
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        AZ
+                        <img src="assets/icons/arrow-down.svg" alt="">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">En</a></li>
+                        <li><a class="dropdown-item" href="#">Ru</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </header>
+        <!-- header end -->
+
+        <!-- navbar start -->
+        <nav>
+            <ul class="nav-links">
+                <a href="index.html" class="nav-link">Ana Səhifə</a>
+                <a href="products.html" class="nav-link">Məhsullar</a>
+                <a href="catalog.html" class="nav-link">Kataloq</a>
+                <a href="aboutUs.html" class="nav-link active">Haqqımızda</a>
+                <a href="blog.html" class="nav-link">Bloq</a>
+                <a href="contact.html" class="nav-link">Əlaqə</a>
+            </ul>
+        </nav>
+        <!-- navbar end -->
+
+        <!--breadcrumb start -->
+        <div class="breadcrumb">
+
+            <img src="assets/icons/home-icon.png" alt="">
+
+            <a href="index.html" class="home-link">Ana Səhifə</a>
+
+            <img src="assets/icons/breadcrumb-icon.png" alt="">
+
+            <a href="#" class="navigation">Haqqımızda</a>
+
+        </div>
+        <!--breadcrumb end -->
+
+        <!-- about us start -->
+        <div class="about-us">
+
+
+        </div>
+        <!-- about us end -->
+
+        <!-- footer start -->
+        <footer>
+
+            <div class="footer-left">
+
+                <div class="logo">
+                    <img src="assets/images/tesero-logo-png.png" alt="">
+                </div>
+
+                <span class="slogan">Fərqli dizaynlar, yüksək keyfiyyət, unikal interyer – hər şey sizin üçün.</span>
+
+            </div>
+
+            <div class="footer-right">
+
+                <div class="contact-infos">
+
+                    <div class="info-div">
+                        <img src="assets/icons/whatsApp.png" alt="">
+                        <span>+994 10 308 70 78</span>
+                    </div>
+
+                    <div class="info-div">
+                        <img src="assets/icons/internet.png" alt="">
+                        <a href="https://tesoro.az/">https://tesoro.az/</a>
+                    </div>
+
+                    <div class="info-div">
+                        <img src="assets/icons/phone.png" alt="">
+                        <span>+994 10 308 70 78</span>
+                    </div>
+
+                    <div class="info-div">
+                        <img src="assets/icons/letter.png" alt="">
+                        <a href="tesoro.azerbaijan2025@gmail.com">tesoro.azerbaijan2025@gmail.com</a>
+                    </div>
+
+                </div>
+
+                <div class="actions">
+                    <a href="contactUs.html">Əlaqə</a>
+                    <a href="catalog.html">Kataloq</a>
+                    <a href="aboutUs.html">Haqqımızda</a>
+                    <a href="privacyAndPolicy.html">Məxfilik siyasəti</a>
+                </div>
+
+            </div>
+
+        </footer>
+        <!-- footer end -->
+
+        <!-- bottom bar start -->
+        <div class="bottom-bar">
+
+            <div class="copyright">
+                <img src="assets/icons/copyright.png" alt="">
+                <span>2025 - Tesoro - Bütün hüquqlar qorunur</span>
+            </div>
+
+            <div class="social-medias">
+                <a href="">
+                    <img src="assets/icons/instagram.png" alt="">
+                </a>
+                <a href="">
+                    <img src="assets/icons/facebook.png" alt="">
+                </a>
+                <a href="">
+                    <img src="assets/icons/tiktok.png" alt="">
+                </a>
+                <a href="">
+                    <img src="assets/icons/linkedin.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+        <!-- bottom bar end -->
+
+    </div>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/searchInput.js"></script>
 </body>
+
 </html>
