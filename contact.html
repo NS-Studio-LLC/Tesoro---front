@@ -15,8 +15,7 @@
 
 <body>
 
-    <div class="about-us-page-container">
-
+    <div class="contact-us-container ">
         <!-- topbar start -->
         <div class="topbar">
             <div class="logo">
@@ -123,9 +122,9 @@
                 <a href="index.html" class="nav-link">Ana Səhifə</a>
                 <a href="products.html" class="nav-link">Məhsullar</a>
                 <a href="catalog.html" class="nav-link">Kataloq</a>
-                <a href="aboutUs.html" class="nav-link active">Haqqımızda</a>
+                <a href="aboutUs.html" class="nav-link">Haqqımızda</a>
                 <a href="blog.html" class="nav-link">Bloq</a>
-                <a href="contact.html" class="nav-link">Əlaqə</a>
+                <a href="contact.html" class="nav-link active">Əlaqə</a>
             </ul>
         </nav>
         <!-- navbar end -->
@@ -144,130 +143,35 @@
         </div>
         <!--breadcrumb end -->
 
-        <!-- about us start -->
-        <div class="about-us-section">
+        <!-- form start -->
+        <div class="contact-us">
 
-            <div class="section-intro">
+            <div class="contact-form">
+                <span class="form-title">Sualınızı qeyd edin</span>
+                <input type="text" placeholder="Adınız">
+                <input type="text" placeholder="Soyadınız">
+                <input class="numeric" type="text" placeholder="Əlaqə nömrəsi">
+                <textarea name="" id="" placeholder="Mesaj"></textarea>
 
-                <div class="product-shapes">
-
-                    <div class="shape-top">
-
-                        <div class="shape-item">
-                            <img src="assets/images/parket.jpg" alt="item1" />
-                        </div>
-
-                        <div class="shape-item">
-                            <img src="assets/images/towl.jpg" alt="item2" />
-                        </div>
-
-                    </div>
-
-                    <div class="shape-bottom">
-
-                        <div class="shape-item">
-                            <img src="assets/images/doormain.jpg" alt="item3" />
-                        </div>
-
-                        <div class="shape-item">
-                            <img src="assets/images/perde.png" alt="item4" />
-                        </div>
-
-                        <div class="shape-item">
-                            <img src="assets/images/towl.jpg" alt="item5" />
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="text-side">
-
-                    <div class="text-box">
-
-                        <span class="text-title">Missiyamız</span>
-
-                        <ul>
-                            <li>İnteryer məkanlarını zövqlü dizayn və keyfiyyətli məhsullarla yenidən formalaşdırmaq
-                            </li>
-                            <li>Müştərilərimizə etibarlı və peşəkar xidmət göstərmək.</li>
-                        </ul>
-
-                    </div>
-
-                    <div class="line"></div>
-
-                    <div class="text-box">
-
-                        <span class="text-title">Dəyərlərimiz</span>
-
-                        <ul>
-                            <li>Yüksək keyfiyyət</li>
-                            <li>Estetik yanaşma</li>
-                            <li>Müştəri məmnunluğu</li>
-                            <li>Peşəkarlıq və etibar</li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-
+                <button class="form-button">Göndər</button>
             </div>
 
-            <div class="features">
-                <div class="feature-card">
+            <div class="contact-infos">
 
-                    <div class="card-icon">
-                        <img src="assets/icons/wooden-flor-icon.png" alt="">
-                    </div>
+                <span class="form-title">Əlaqə Məlumatları</span>
 
-                    <span class="card-title">Kətan teksturalı</span>
+                <div class="info-div">Tel : +994 10 308 70 78</div>
 
-                    <span class="card-info">Oboylar kətan teksturasına malikdir</span>
+                <div class="info-div">Whatsapp : +994 10 308 70 78</div>
 
-                </div>
-                <div class="feature-card">
+                <div class="info-div">E-poçt : tesoro.azerbaijan2025@gmail.com  </div>
 
-                    <div class="card-icon">
-                        <img src="assets/icons/shoe-brush-icon.png" alt="">
-                    </div>
+                <div class="info-div">Vebsayt : https://tesoro.az/</div>
 
-                    <span class="card-title">Yuyula bilən</span>
-
-                    <span class="card-info">Oboylar rahatlıqla yuyula bilər</span>
-
-                </div>
-                <div class="feature-card">
-
-                    <div class="card-icon">
-                        <img src="assets/icons/blur-icon.png" alt="">
-                    </div>
-
-                    <span class="card-title">Solmaya davamlı</span>
-
-                    <span class="card-info">Rənglər uzun müddət solmur</span>
-
-                </div>
-                <div class="feature-card">
-
-                    <div class="card-icon">
-                        <img src="assets/icons/clock-icon.png" alt="">
-                    </div>
-
-                    <span class="card-title">Uzunömürlü</span>
-
-                    <span class="card-info">Məhsullar uzunömürlüdür</span>
-
-                </div>
-            </div>
-
-            <div class="section-actions">
-                <a href="contact.html">Bizimlə əlaqə</a>
             </div>
 
         </div>
-        <!-- about us end -->
+        <!-- form end -->
 
         <!-- footer start -->
         <footer>
@@ -346,7 +250,6 @@
 
         </div>
         <!-- bottom bar end -->
-
     </div>
 
     <!-- scripts -->
@@ -354,6 +257,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
     <script src="assets/js/searchInput.js"></script>
+    <script src="assets/js/numericInput.js"></script>
 </body>
 
 </html>
