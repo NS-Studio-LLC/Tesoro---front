@@ -1,0 +1,16 @@
+.catalogs-page-container{
+
+    .catalog-filters{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .catalogs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        padding: 20px 50px;
+    }
+}

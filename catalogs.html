@@ -14,8 +14,7 @@
 </head>
 
 <body>
-
-    <div class="provacy-and-policy-page-container">
+    <div class="catalogs-page-container">
         <!-- topbar start -->
         <div class="topbar">
             <div class="logo">
@@ -121,7 +120,7 @@
             <ul class="nav-links">
                 <a href="index.html" class="nav-link">Ana Səhifə</a>
                 <a href="products.html" class="nav-link">Məhsullar</a>
-                <a href="catalog.html" class="nav-link">Kataloq</a>
+                <a href="catalog.html" class="nav-link active">Kataloq</a>
                 <a href="aboutUs.html" class="nav-link">Haqqımızda</a>
                 <a href="blog.html" class="nav-link">Bloq</a>
                 <a href="contact.html" class="nav-link">Əlaqə</a>
@@ -138,16 +137,60 @@
 
             <img src="assets/icons/breadcrumb-icon.png" alt="">
 
-            <a href="#" class="navigation">Məxfilik siyasəti</a>
+            <a href="#" class="navigation">Kataloqlar</a>
 
         </div>
         <!--breadcrumb end -->
 
-        <!-- privacy and policy start -->
-         <div class="privacy-and-policy">
-            text here
-         </div>
-        <!-- privacy and policy end -->
+        <!-- filters start -->
+        <div class="catalog-filters">
+            <button class="filter-button btn-more">Divar kağızları</button>
+            <button class="filter-button btn-more">Divar panelləri</button>
+            <button class="filter-button btn-more">Döşəmə örtükləri</button>
+        </div>
+        <!-- filters end -->
+
+        <!-- catalogs start -->
+        <div class="catalogs">
+
+            <div class="catalog-card">
+
+                <span class="catalog-title">Kataloq 1</span>
+
+            </div>
+
+            <div class="catalog-card">
+
+                <span class="catalog-title">Kataloq 1</span>
+
+                <a href="catalogs.html" class="btn-more">
+                    <span>Daha çox</span>
+                    <img src="assets/icons/arrow-right-white.png" alt="">
+                </a>
+            </div>
+
+            <div class="catalog-card">
+
+                <span class="catalog-title">Kataloq 1</span>
+
+                <a href="catalogs.html" class="btn-more">
+                    <span>Daha çox</span>
+                    <img src="assets/icons/arrow-right-white.png" alt="">
+                </a>
+            </div>
+
+            <div class="catalog-card">
+
+                <span class="catalog-title">Kataloq 1</span>
+
+                <a href="catalogs.html" class="btn-more">
+                    <span>Daha çox</span>
+                    <img src="assets/icons/arrow-right-white.png" alt="">
+                </a>
+            </div>
+
+        </div>
+        <!-- catalogs end -->
 
         <!-- footer start -->
         <footer>
@@ -227,13 +270,12 @@
         </div>
         <!-- bottom bar end -->
     </div>
-    
+
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
     <script src="assets/js/searchInput.js"></script>
-    <script src="assets/js/numericInput.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+.catalog-card {
+    height: 370px;
+    box-shadow: 4px 4px 7px -1px rgba(0, 0, 0, 0.59);
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 24px;
+    position: relative;
+
+    .catalog-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+    }
+
+    .btn-more {
+        position: absolute;
+        bottom: 40px;
+        right: 30px;
+    }
+}

@@ -19,12 +19,14 @@
 @use './components/cards/blogCard';
 @use './components/cards/pagination';
 @use './components/cards/featureCard';
+@use './components/cards/catalogCard';
 // selects
 @use './components/selects/select';
 // inputs
 @use './components/inputs/inputWithLabel';
 // buttons
 @use './components/buttons/formButton';
+@use './components/buttons/btnMore';
 // dropdowns
 @use './components/dropdowns/menuDropdown';
 
@@ -38,5 +40,7 @@
 @use './pages/blogDetails';
 @use './pages/aboutUs';
 @use './pages/contact';
+@use './pages/catalogs';
+@use './pages/productDetails';
 
 @use './pages/test';
