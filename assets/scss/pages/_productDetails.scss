@@ -1,0 +1,190 @@
+.product-details-page {
+
+    .product-details {
+        display: flex;
+        gap: 32px;
+        padding: 32px;
+
+        .product-meta {
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            .fotorama-container {
+                border-radius: 12px;
+                overflow: hidden;
+                background-color: #fff;
+                padding: 12px;
+            }
+
+            .product-infos {
+                background-color: #fff;
+                border-radius: 12px;
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                .product-title {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+
+                &-row {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+
+                    div {
+                        background-color: #D9D9D9;
+                        color: #7B7A7A;
+                        padding: 4px;
+                        border-radius: 6px;
+                        font-weight: 500;
+                        font-size: 12px;
+                    }
+                }
+
+                .product-price {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #fc1414;
+                }
+
+                .line {
+                    height: 1px;
+                    width: 100%;
+                    background-color: #868686;
+                }
+
+            }
+        }
+
+        .connection-infos {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            height: fit-content;
+
+            &-header {
+                border-bottom: 1px solid black;
+
+                span {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+            }
+
+            .admin-infos {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                .admin {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+
+                    &-img {
+                        width: 44px;
+                        height: 44px;
+                        border-radius: 50%;
+                        overflow: hidden;
+
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    &-name {
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+
+                .admin-connection-infos {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+                    div {
+                        border-radius: 6px;
+                        padding: 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 8px;
+
+                        span {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .telephone {
+                        border: 1px solid #dedede;
+                    }
+
+                    .whatsapp {
+                        background-color: #22C55E;
+                        color: #fff;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .similar-products-container {
+        padding: 32px 32px 100px 32px;
+
+        .similar-products {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 24px;
+
+            .section-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .section-title{
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+
+                a {
+                    padding: 4px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #000;
+                }
+            }
+
+            .section-body {
+                padding: 0 50px;
+
+                .swiper-container {
+                    padding: 24px 24px 40px;
+                    padding: 0;
+                    position: relative;
+                    width: 95%;
+
+                    .product-swiper {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
+
 <body>
-  
+
+  <section class="product-gallery">
+    <!-- MAIN -->
+    <div class="swiper gallery-main">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/bedroom.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/bedroom.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/bedroom.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/bedroom.jpg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/bedroom.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- THUMBS (sol-alt overlay) -->
+    <div class="gallery-thumbs">
+      <button class="thumbs-nav thumbs-prev" type="button" aria-label="Yuxarı">
+        <!-- up icon -->
+        <svg viewBox="0 0 24 24">
+          <path d="M6 14l6-6 6 6" />
+        </svg>
+      </button>
+
+      <div class="swiper gallery-thumbs-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/images/bedroom.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="assets/images/bedroom.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="assets/images/bedroom.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="assets/images/bedroom.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="assets/images/bedroom.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="assets/images/bedroom.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="assets/images/bedroom.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="assets/images/bedroom.jpg" alt="" /></div>
+        </div>
+      </div>
+
+      <button class="thumbs-nav thumbs-next" type="button" aria-label="Aşağı">
+        <!-- down icon -->
+        <svg viewBox="0 0 24 24">
+          <path d="M6 10l6 6 6-6" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script>
+    const thumbsSwiper = new Swiper(".gallery-thumbs-swiper", {
+      direction: "vertical",
+      slidesPerView: 4,
+      spaceBetween: 10,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".thumbs-next",
+        prevEl: ".thumbs-prev",
+      },
+    });
+
+    // MAIN
+    const mainSwiper = new Swiper(".gallery-main", {
+      spaceBetween: 12,
+      thumbs: { swiper: thumbsSwiper },
+    });
+  </script>
 </body>
+
 </html>
