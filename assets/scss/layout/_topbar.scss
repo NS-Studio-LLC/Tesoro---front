@@ -1,14 +1,18 @@
-.topbar{
+
+.topbar {
     display: flex;
     justify-content: center;
     background-color: #fff;
 
-    .logo{
+    .logo {
         height: 60px;
-        img{
+
+        img {
             object-fit: contain;
             width: 100%;
             height: 100%;
         }
     }
+
+
 }

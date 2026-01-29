@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .bottom-bar {
     padding: 30px 48px;
     display: flex;
@@ -6,9 +8,31 @@
     gap: 8px;
     background-color: #B49532;
 
-    .copyright{
-        span{
+    @include mq(tablet-portrait-up) {
+        padding: 10px 24px;
+    }
+
+    .copyright {
+        span {
             font-weight: 500;
+
+            @include mq(tablet-portrait-up) {
+                font-size: 10px;
+            }
+        }
+    }
+
+    .social-medias {
+
+        a {
+            @include mq(tablet-portrait-up) {
+
+                img {
+                    width: 24px;
+                    height: 24px;
+                }
+
+            }
         }
     }
 }

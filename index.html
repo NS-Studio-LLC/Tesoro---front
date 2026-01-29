@@ -27,7 +27,8 @@
     <!-- header start -->
     <header>
 
-        <div class="dropdown menu-dropdown">
+        <!-- dropdown -->
+        <div class="dropdown desktop-menu-dropdown">
 
             <button class="dropdown-toggle menu-icon" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -35,6 +36,7 @@
             </button>
 
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+
                 <a href="#" class="dropdown-item">
                     <img src="assets/icons/combi-icon.png" alt="">
                     <span>Kombi sistemləri</span>
@@ -80,6 +82,72 @@
             </ul>
 
         </div>
+
+        <!-- offcanvas start -->
+        <button class="header-offcanvas-btn btn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#headerOffcanvasStart" aria-controls="offcanvasStart">
+            <img src="assets/icons/menu.svg" alt="">
+        </button>
+
+        <div class="offcanvas header-offcanvas offcanvas-start" tabindex="-1" id="headerOffcanvasStart"
+            aria-labelledby="offcanvasStartLabel">
+
+            <!-- offcanvas header -->
+            <div class="offcanvas-header">
+                <div class="offcanvas-title">Kateqoriyalar</div>
+                <button class="offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="assets/icons/offcanvas-close.svg" alt="">
+                </button>
+            </div>
+
+            <!-- offcanvas body -->
+            <div class="offcanvas-body">
+                <a href="#" class="offcanvas-item">
+                    <img src="assets/icons/combi-icon.png" alt="">
+                    <span>Kombi sistemləri</span>
+                    <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                </a>
+
+                <a href="#" class="offcanvas-item">
+                    <img src="assets/icons/wallpaper-icon.png" alt="">
+                    <span>Divar kağızları</span>
+                    <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                </a>
+
+                <a href="#" class="offcanvas-item">
+                    <img src="assets/icons/wall-icon.png" alt="">
+                    <span>Divar panelləri</span>
+                    <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                </a>
+                <a href="#" class="offcanvas-item">
+                    <img src="assets/icons/comb-icon.png" alt="">
+                    <span>Dekorativ daraqlar</span>
+                    <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                </a>
+                <a href="#" class="offcanvas-item">
+                    <img src="assets/icons/glue-icon.png" alt="">
+                    <span>Yapışdırıcılar</span>
+                    <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                </a>
+                <a href="#" class="offcanvas-item">
+                    <img src="assets/icons/curtain-icon.png" alt="">
+                    <span>Pərdələr</span>
+                    <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                </a>
+                <a href="#" class="offcanvas-item">
+                    <img src="assets/icons/door-icon.png" alt="">
+                    <span>Qapılar</span>
+                    <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                </a>
+                <a href="#" class="offcanvas-item">
+                    <img src="assets/icons/parcet-icon.png" alt="">
+                    <span>Döşəmə örtükləri</span>
+                    <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                </a>
+            </div>
+
+        </div>
+        <!-- offcanvas end -->
 
         <div class="header-actions">
 
@@ -129,79 +197,126 @@
     </nav>
     <!-- navbar end -->
 
+    <!-- mobile search start -->
+    <div class="mobile-search-div">
+
+        <!-- offcanvas start -->
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvasStart"
+            aria-controls="offcanvasStart">
+            <img src="assets/icons/circled-menu.png" alt="">
+        </button>
+
+        <div class="offcanvas nav-offcanvas offcanvas-start" tabindex="-1" id="navOffcanvasStart"
+            aria-labelledby="offcanvasStartLabel">
+
+            <!-- offcanvas header -->
+            <div class="offcanvas-header">
+                <div class="logo">
+                    <img src="assets/images/tesero-logo-png.png" alt="">
+                </div>
+                <button class="offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="assets/icons/offcanvas-close-colored.svg" alt="">
+                </button>
+            </div>
+
+            <!-- offcanvas body -->
+            <div class="offcanvas-body">
+                <a href="/" class="offcanvas-item">
+                    <img src="assets/icons/home-icon.png" alt="">
+                    <span>Ana Səhifə</span>
+                </a>
+
+                <a href="productList.html" class="offcanvas-item">
+                    <img src="assets/icons/box-icon.svg" alt="">
+                    <span>Məhsullar</span>
+                </a>
+
+                <a href="catalogs.html" class="offcanvas-item">
+                    <img src="assets/icons/book-icon.svg" alt="">
+                    <span>Kataloq</span>
+                </a>
+                <a href="aboutUs.html" class="offcanvas-item">
+                    <img src="assets/icons/info-icon.svg" alt="">
+                    <span>Haqqımızda</span>
+                </a>
+                <a href="blog.html" class="offcanvas-item">
+                    <img src="assets/icons/blog-icon.svg" alt="">
+                    <span>Bloq</span>
+                </a>
+                <a href="contact.html" class="offcanvas-item">
+                    <img src="assets/icons/contact-icon.svg" alt="">
+                    <span>Əlaqə</span>
+                </a>
+            </div>
+
+        </div>
+        <!-- offcanvas end -->
+
+        <div class="mobile-search-input-div">
+            <input type="text" placeholder="Axtar...">
+            <img src="assets/icons/search.svg" alt="">
+        </div>
+
+    </div>
+    <!-- mobile search end -->
+
     <!-- hero start -->
     <div class="hero-container">
 
         <img src="assets/images/hero.png" alt="">
 
-        <div class="hero-text">
-
-            <div class="discount">
-                <span class="discount-percent">10%</span>
-                <div>
-                    <span>Seçilmiş məhsullara</span>
-                    <span>Endirim!</span>
-                </div>
-            </div>
-
-            <span class="slogan">
-                Kombi • Oboy • Kafel • Laminat • Pərdə • Qapı - Hər biri<span class="hightlight">Tesoro</span>’da</span>
-
-
-        </div>
-
     </div>
     <!-- hero end -->
 
-    <!-- what we sell start -->
-    <div class="what-we-sell">
+    <!-- our-categories start -->
+    <div class="our-categories">
 
-        <div class="products">
+        <div class="categories">
 
-            <div class="product-div">
-                <div class="product-img">
+            <a href="#" class="category-div">
+                <div class="category-img">
                     <img src="assets/images/combii.png" alt="">
                 </div>
 
-                <span class="product-name">Kombi</span>
-            </div>
+                <span class="category-name">Kombi</span>
+            </a>
 
-            <div class="product-div">
-                <div class="product-img">
+            <a href="#" class="category-div">
+                <div class="category-img">
                     <img src="assets/images/mask.png" alt="">
                 </div>
 
-                <span class="product-name">Oboy</span>
-            </div>
+                <span class="category-name">Oboy</span>
+            </a>
 
-            <div class="product-div">
-                <div class="product-img">
+            <a href="#" class="category-div">
+                <div class="category-img">
                     <img src="assets/images/rectanglee.png" alt="">
                 </div>
 
-                <span class="product-name">Laminat</span>
-            </div>
+                <span class="category-name">Laminat</span>
+            </a>
 
-            <div class="product-div">
-                <div class="product-img">
+            <a href="#" class="category-div">
+                <div class="category-img">
                     <img src="assets/images/kafel.png" alt="">
                 </div>
 
-                <span class="product-name">Kafel</span>
-            </div>
+                <span class="category-name">Kafel</span>
+            </a>
 
-            <div class="product-div">
-                <div class="product-img">
+            <a href="#" class="category-div">
+                <div class="category-img">
                     <img src="assets/images/door.png    " alt="">
                 </div>
 
-                <span class="product-name">Qapı</span>
-            </div>
+                <span class="category-name">Qapı</span>
+            </a>
 
         </div>
 
     </div>
-    <!-- what we sell end -->
+    <!-- our-categories end -->
 
     <!-- products swiper start -->
     <div class="swiper-section">
@@ -340,44 +455,92 @@
 
         </div>
 
+        <div class="product-list-mobile">
+
+            <div class="product-card">
+
+                <button class="fav-btn" type="button" aria-label="Favorit">
+                    <img src="assets/icons/favorite.svg" alt="">
+                </button>
+
+                <div class="img-wrap">
+                    <img src="assets/images/door1.png" alt="Məhsul" />
+                </div>
+
+                <div class="infos">
+                    <p class="title">Seyf qapı</p>
+                    <p class="old-price">399,99 ₼</p>
+                    <p class="new-price">299,99 ₼</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+
+                <button class="fav-btn" type="button" aria-label="Favorit">
+                    <img src="assets/icons/favorite.svg" alt="">
+                </button>
+
+                <div class="img-wrap">
+                    <img src="assets/images/door1.png" alt="Məhsul" />
+                </div>
+
+                <div class="infos">
+                    <p class="title">Seyf qapı</p>
+                    <p class="old-price">399,99 ₼</p>
+                    <p class="new-price">299,99 ₼</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+
+                <button class="fav-btn" type="button" aria-label="Favorit">
+                    <img src="assets/icons/favorite.svg" alt="">
+                </button>
+
+                <div class="img-wrap">
+                    <img src="assets/images/door1.png" alt="Məhsul" />
+                </div>
+
+                <div class="infos">
+                    <p class="title">Seyf qapı</p>
+                    <p class="old-price">399,99 ₼</p>
+                    <p class="new-price">299,99 ₼</p>
+                </div>
+            </div>
+
+            <div class="product-card">
+
+                <button class="fav-btn" type="button" aria-label="Favorit">
+                    <img src="assets/icons/favorite.svg" alt="">
+                </button>
+
+                <div class="img-wrap">
+                    <img src="assets/images/door1.png" alt="Məhsul" />
+                </div>
+
+                <div class="infos">
+                    <p class="title">Seyf qapı</p>
+                    <p class="old-price">399,99 ₼</p>
+                    <p class="new-price">299,99 ₼</p>
+                </div>
+            </div>
+
+        </div>
+
     </div>
     <!-- products swiper end -->
 
-    <!-- billboards start -->
-    <div class="billboards">
-        <div class="billboard">
-
-            <div class="billboard-title">
-                <span>Laminat görünümlü <br> <span class="hightlight">Kafellər</span></span>
-
-                <a href="#" class="get">Əldə edin</a>
-
-            </div>
-
-            <div class="billboard-image">
-                <img src="assets/images/billboard-img.png" alt="">
-            </div>
-
-
+    <!-- banner start -->
+    <div class="banners">
+        <div class="banner">
+            <img src="assets/images/bedroom.jpg" alt="">
         </div>
 
-        <div class="billboard">
-
-            <div class="billboard-title">
-                <span>Laminat görünümlü <br> <span class="hightlight">Kafellər</span></span>
-
-                <a href="#" class="get">Əldə edin</a>
-
-            </div>
-
-            <div class="billboard-image">
-                <img src="assets/images/billboard-img.png" alt="">
-            </div>
-
-
+        <div class="banner">
+            <img src="assets/images/bedroom.jpg" alt="">
         </div>
     </div>
-    <!-- billboards end -->
+    <!-- banner end -->
 
     <!-- house and decoration start -->
     <div class="house-and-decoration">
@@ -401,7 +564,9 @@
             </div>
         </div>
 
-        <a href="#" class="btn-more">Daha çox</a>
+        <div class="btn-more-div">
+            <a href="#" class="btn-more">Daha çox</a>
+        </div>
 
         <div class="section-right">
 

@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .login-page-container {
 
     .login-container {
@@ -6,6 +8,10 @@
         align-items: center;
         padding: 40px 40px 200px 40px;
         gap: 32px;
+
+        @include mq(tablet-portrait-up) {
+            padding: 20px 20px 100px 20px;
+        }
 
         .page-title {
             font-size: 36px;
@@ -23,6 +29,10 @@
             border-radius: 12px;
             box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.37);
 
+            @include mq(tablet-portrait-up) {
+                width: 100%;
+            }
+
             .input-with-label {
                 width: 80%;
             }
@@ -31,12 +41,12 @@
                 width: 80%;
             }
 
-            .login-actions{
+            .login-actions {
                 display: flex;
                 justify-content: space-between;
                 width: 80%;
 
-                a{
+                a {
                     font-size: 14px;
                     color: #000;
                 }

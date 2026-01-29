@@ -2,7 +2,6 @@
     padding: 10px 12px 28px;
 }
 
-// Pagination dots
 .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
@@ -14,7 +13,6 @@
     background: #111;
 }
 
-// Custom next/prev buttons
 .nav-btn {
     width: 38px;
     height: 38px;
@@ -41,7 +39,6 @@
         fill: none;
     }
 
-    // disabled prev gizlənsin
     &.swiper-button-disabled {
         opacity: 0;
         pointer-events: none;
@@ -57,7 +54,6 @@
     left: -14px;
 }
 
-// Responsive fine-tune
 @media (max-width: 1024px) {
     .nav-next {
         right: -10px;

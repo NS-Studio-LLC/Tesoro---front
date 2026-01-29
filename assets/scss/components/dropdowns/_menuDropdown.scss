@@ -1,89 +1,43 @@
-// .menu-dropdown {
-//     padding: 24px;
-//     background-color: #fff;
-//     position: absolute;
-//     left: -60px;
-//     display: flex;
-//     flex-direction: column;
-//     z-index: 9;
-//     max-width: 360px;
-//     min-width: 360px;
+    .desktop-menu-dropdown {
+        border: none;
+        position: relative;
 
-//     .dropdown-item {
-//         display: flex;
-//         align-items: center;
-//         transition: all .2s ease-in;
+        .dropdown-menu {
+            background-color: #fff;
+            position: absolute;
+            left: -60px !important;
+            min-width: 360px;
+            overflow: hidden;
 
-//         &:hover {
-//             transform: scale(1.1);
+            .dropdown-item {
+                display: flex;
+                align-items: center;
+                transition: all .2s ease-in;
 
-//             span {
-//                 color: #977300;
-//             }
-//         }
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: #fff;
 
-//         img {
-//             width: 50px;
-//             height: 50px;
-//         }
+                    span {
+                        color: #977300;
+                    }
+                }
 
-//         .arrow {
-//             width: 24px;
-//             height: 24px;
-//             margin-left: auto;
-//         }
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
 
-//         span {
-//             font-weight: 500;
-//         }
-//     }
-
-// }
-
-// .is-menu-open {
-//     display: none !important;
-// }
-
-.menu-dropdown {
-    border: none;
-    position: relative;
-
-    .dropdown-menu {
-        background-color: #fff;
-        position: absolute;
-        left: -60px !important;
-        min-width: 360px;
-        overflow: hidden;
-
-        .dropdown-item {
-            display: flex;
-            align-items: center;
-            transition: all .2s ease-in;
-
-            &:hover {
-                transform: scale(1.1);
-                background-color: #fff;
+                .arrow {
+                    width: 24px;
+                    height: 24px;
+                    margin-left: auto;
+                }
 
                 span {
-                    color: #977300;
+                    font-weight: 500;
                 }
             }
 
-            img {
-                width: 50px;
-                height: 50px;
-            }
-
-            .arrow {
-                width: 24px;
-                height: 24px;
-                margin-left: auto;
-            }
-
-            span {
-                font-weight: 500;
-            }
         }
-
     }
-}

@@ -11,9 +11,9 @@
 @use './layout/bottombar';
 @use './layout/nav';
 @use './layout/breadcrumb';
+@use './layout/mobileSearch';
 
 // components
-@use './components/swiper';
 // cards
 @use './components/cards/productCard';
 @use './components/cards/blogCard';
@@ -29,6 +29,12 @@
 @use './components/buttons/btnMore';
 // dropdowns
 @use './components/dropdowns/menuDropdown';
+// offcanvas
+@use './components/offcanvas/headerOffcanvas';
+@use './components/offcanvas/navOffcanvas';
+// swiper
+@use './components/swiper/fotoramaSwiper';
+@use './components/swiper/swiper';
 // fotorama
 @use './components/fotorama/fotorama';
 

@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 header {
     padding: 0 60px;
     display: flex;
@@ -7,13 +9,21 @@ header {
     border-top: 2px solid #dedede;
     border-bottom: 1px solid #dedede;
 
+    @include mq(tablet-portrait-up) {
+        padding: 12px 20px;
+
+        .desktop-menu-dropdown{
+            display: none;
+        }
+    }
+
     .menu-icon {
         cursor: pointer;
         position: relative;
         border: none !important;
         background-color: transparent;
 
-        &::after{
+        &::after {
             display: none;
         }
     }
@@ -36,6 +46,10 @@ header {
             overflow: hidden;
             transition: width 0.25s ease;
             box-shadow: 0px 0px 10px -5px #000000;
+
+            @include mq(tablet-portrait-up) {
+                display: none;
+            }
 
             .search-icon {
                 width: 20px;
@@ -94,6 +108,12 @@ header {
                 width: 32px;
                 height: 32px;
             }
+
+            @include mq(tablet-portrait-up) {
+                border-right: none;
+                padding-right: 0;
+            }
+
         }
 
         .favorite-div {
@@ -106,6 +126,11 @@ header {
             img {
                 width: 28px;
                 height: 28px;
+            }
+
+            @include mq(tablet-portrait-up) {
+                border-right: none;
+                padding-right: 0;
             }
         }
 
@@ -128,6 +153,12 @@ header {
             }
         }
 
+    }
+
+    .header-offcanvas-btn{
+        @include mq(tablet-portrait-down){
+            display: none;
+        }
     }
 
 }

@@ -2,7 +2,7 @@ new Swiper("#productSwiper", {
   slidesPerView: 4,
   spaceBetween: 22,
   speed: 500,
-  loop: false, // şəkildəki kimi: əvvəlcə prev görünməsin
+  loop: false,
   navigation: {
     nextEl: ".nav-next",
     prevEl: ".nav-prev",

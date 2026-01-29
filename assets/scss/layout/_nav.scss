@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 nav {
     display: flex;
     justify-content: center;
@@ -20,5 +22,9 @@ nav {
         .active {
             color: #B08808;
         }
+    }
+
+    @include mq(tablet-portrait-up) {
+        display: none;
     }
 }

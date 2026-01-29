@@ -1,14 +1,23 @@
+@use '../abstracts/mixins' as *;
+
 .blogs-list-container {
 
     .blogs-container {
         padding: 40px 100px;
-
 
         .blogs {
             display: grid;
             justify-content: center;
             grid-template-columns: repeat(4, 1fr);
             gap: 32px;
+        }
+
+        @include mq(tablet-portrait-up){
+            padding: 20px 25px;
+
+            .blogs{
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
     }
