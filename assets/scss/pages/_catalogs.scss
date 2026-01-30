@@ -1,16 +1,26 @@
-.catalogs-page-container{
+@use '../abstracts/mixins' as *;
 
-    .catalog-filters{
+.catalogs-page-container {
+
+    .catalog-filters {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 24px;
     }
 
-    .catalogs{
+    .catalogs {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
         padding: 20px 50px;
+
+        @include mq(tablet-portrait-up) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mq(phone-only) {
+            grid-template-columns: repeat(1, 1fr);
+        }
     }
 }

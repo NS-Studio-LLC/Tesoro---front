@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .breadcrumb {
     padding: 5px 60px;
     display: flex;
@@ -5,6 +7,11 @@
     gap: 12px;
     background-color: #fff;
     box-shadow: 0px 8px 7px -8px rgba(0,0,0,0.78);
+
+    @include mq(tablet-portrait-up){
+        padding: 5px 20px;
+        font-size: 12px
+    };
 
     a {
         color: #000;

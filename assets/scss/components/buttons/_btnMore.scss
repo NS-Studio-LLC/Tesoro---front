@@ -1,9 +1,35 @@
+@use '../../abstracts/mixins' as *;
+
 .btn-more {
     padding: 12px;
     text-align: center;
     color: #fff;
-    border-radius: 12px;
-    background-color: #D4AF37;
+    border-radius: 6px;
     margin-top: 24px;
     border: none;
+    text-wrap: nowrap;
+    width: fit-content;
+
+    @include mq(tablet-portrait-up) {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    @include mq(phone-only) {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    img{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.orange {
+    background-image: linear-gradient(to bottom, #d4af37, #cea72d, #c79e22, #c19615, #ba8e02);
+}
+
+.black {
+    background-color: #000;
 }

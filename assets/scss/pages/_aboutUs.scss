@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .about-us-page-container {
     .about-us-section {
         display: flex;
@@ -5,9 +7,23 @@
         gap: 50px;
         padding: 50px;
 
+        @include mq(tablet-portrait-up) {
+            padding: 12px 24px;
+        }
+
         .section-intro {
             display: flex;
             padding: 40px;
+
+            @include mq(tablet-portrait-up) {
+                padding: 12px;
+            }
+
+            @include mq(tablet-portrait-up) {
+                flex-direction: column;
+                align-items: center;
+                gap: 32px;
+            }
 
             .product-shapes {
                 display: flex;
@@ -21,6 +37,11 @@
                     height: 176px;
                     border-radius: 999px;
                     overflow: hidden;
+
+                    @include mq(phone-only) {
+                        width: 55px;
+                        height: 130px;
+                    }
 
                     img {
                         object-fit: cover;
@@ -47,10 +68,22 @@
                 display: flex;
                 gap: 24px;
 
+                @include mq(tablet-portrait-up) {
+                    width: 100%;
+                }
+
+                @include mq(phone-only) {
+                    flex-direction: column;
+                }
+
                 .line {
                     height: 100%;
                     min-width: 1px;
                     background-color: #868686;
+
+                    @include mq(tablet-portrait-up) {
+                        height: auto;
+                    }
                 }
 
                 .text-box {
@@ -58,6 +91,10 @@
                     flex-direction: column;
                     gap: 24px;
                     width: 50%;
+
+                    @include mq(phone-only) {
+                        width: 100%;
+                    }
 
                     .text-title {
                         font-size: 20px;
@@ -72,6 +109,10 @@
             display: flex;
             gap: 40px;
             justify-content: center;
+
+            @include mq(tablet-portrait-up) {
+                flex-direction: column;
+            }
         }
 
         .section-actions {

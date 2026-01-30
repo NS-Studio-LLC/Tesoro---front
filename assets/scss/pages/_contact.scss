@@ -1,9 +1,17 @@
+@use '../abstracts/mixins' as *;
+
 .contact-us-container {
 
     .contact-us {
         padding: 50px 100px 300px 50px;
         display: flex;
         gap: 200px;
+
+        @include mq(tablet-portrait-up) {
+            flex-direction: column;
+            padding: 24px 50px 24px 24px;
+            gap: 50px;
+        }
 
         .form-title {
             font-size: 32px;
@@ -17,7 +25,9 @@
             flex-direction: column;
             gap: 24px;
 
-
+            @include mq(tablet-portrait-up) {
+                width: 100%;
+            }
 
             input {
                 padding: 12px;
@@ -48,6 +58,10 @@
             flex-direction: column;
             gap: 24px;
             width: 50%;
+
+            @include mq(tablet-portrait-up) {
+                width: 100%;
+            }
 
             .info-div {
                 color: #B49532;

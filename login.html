@@ -18,16 +18,17 @@
     <div class="login-page-container">
         <!-- topbar start -->
         <div class="topbar">
-            <div class="logo">
+            <a href="/" class="logo">
                 <img src="assets/images/tesero-logo-png.png" alt="">
-            </div>
+            </a>
         </div>
         <!-- topbar end -->
 
         <!-- header start -->
         <header>
 
-            <div class="dropdown menu-dropdown">
+            <!-- dropdown -->
+            <div class="dropdown desktop-menu-dropdown">
 
                 <button class="dropdown-toggle menu-icon" type="button" id="dropdownMenuButton2"
                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,6 +36,7 @@
                 </button>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+
                     <a href="#" class="dropdown-item">
                         <img src="assets/icons/combi-icon.png" alt="">
                         <span>Kombi sistemləri</span>
@@ -81,18 +83,80 @@
 
             </div>
 
+            <!-- offcanvas start -->
+            <button class="header-offcanvas-btn btn" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#headerOffcanvasStart" aria-controls="offcanvasStart">
+                <img src="assets/icons/menu.svg" alt="">
+            </button>
+
+            <div class="offcanvas header-offcanvas offcanvas-start" tabindex="-1" id="headerOffcanvasStart"
+                aria-labelledby="offcanvasStartLabel">
+
+                <!-- offcanvas header -->
+                <div class="offcanvas-header">
+                    <div class="offcanvas-title">Kateqoriyalar</div>
+                    <button class="offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img src="assets/icons/offcanvas-close.svg" alt="">
+                    </button>
+                </div>
+
+                <!-- offcanvas body -->
+                <div class="offcanvas-body">
+                    <a href="#" class="offcanvas-item">
+                        <img src="assets/icons/combi-icon.png" alt="">
+                        <span>Kombi sistemləri</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+
+                    <a href="#" class="offcanvas-item">
+                        <img src="assets/icons/wallpaper-icon.png" alt="">
+                        <span>Divar kağızları</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+
+                    <a href="#" class="offcanvas-item">
+                        <img src="assets/icons/wall-icon.png" alt="">
+                        <span>Divar panelləri</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="offcanvas-item">
+                        <img src="assets/icons/comb-icon.png" alt="">
+                        <span>Dekorativ daraqlar</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="offcanvas-item">
+                        <img src="assets/icons/glue-icon.png" alt="">
+                        <span>Yapışdırıcılar</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="offcanvas-item">
+                        <img src="assets/icons/curtain-icon.png" alt="">
+                        <span>Pərdələr</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="offcanvas-item">
+                        <img src="assets/icons/door-icon.png" alt="">
+                        <span>Qapılar</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                    <a href="#" class="offcanvas-item">
+                        <img src="assets/icons/parcet-icon.png" alt="">
+                        <span>Döşəmə örtükləri</span>
+                        <img src="assets/icons/dropdown-arrow.svg" alt="" class="arrow">
+                    </a>
+                </div>
+
+            </div>
+            <!-- offcanvas end -->
+
             <div class="header-actions">
 
-                <div class="search-div" id="searchBox">
+                <div class="header-search-div" id="searchBox">
                     <img src="assets/icons/search.svg" alt="Search" class="search-icon">
                     <input type="text" placeholder="Axtar..." class="search-input" />
                 </div>
 
-                <a class="plus-div">
-                    <img src="assets/icons/plus.svg" alt="">
-                </a>
-
-                <a class="profile-div">
+                <a href="login.html" class="profile-div">
                     <img src="assets/icons/profil.svg" alt="">
                 </a>
 
@@ -119,15 +183,78 @@
         <!-- navbar start -->
         <nav>
             <ul class="nav-links">
-                <a href="index.html" class="nav-link">Ana Səhifə</a>
+                <a href="index.html" class="nav-link active">Ana Səhifə</a>
                 <a href="products.html" class="nav-link">Məhsullar</a>
-                <a href="catalog.html" class="nav-link">Kataloq</a>
+                <a href="catalogs.html" class="nav-link">Kataloq</a>
                 <a href="aboutUs.html" class="nav-link">Haqqımızda</a>
                 <a href="blog.html" class="nav-link">Bloq</a>
                 <a href="contact.html" class="nav-link">Əlaqə</a>
             </ul>
         </nav>
         <!-- navbar end -->
+
+        <!-- mobile search start -->
+        <div class="mobile-search-div">
+
+            <!-- offcanvas start -->
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#navOffcanvasStart"
+                aria-controls="offcanvasStart">
+                <img src="assets/icons/circled-menu.png" alt="">
+            </button>
+
+            <div class="offcanvas nav-offcanvas offcanvas-start" tabindex="-1" id="navOffcanvasStart"
+                aria-labelledby="offcanvasStartLabel">
+
+                <!-- offcanvas header -->
+                <div class="offcanvas-header">
+                    <div class="logo">
+                        <img src="assets/images/tesero-logo-png.png" alt="">
+                    </div>
+                    <button class="offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img src="assets/icons/offcanvas-close-colored.svg" alt="">
+                    </button>
+                </div>
+
+                <!-- offcanvas body -->
+                <div class="offcanvas-body">
+                    <a href="/" class="offcanvas-item">
+                        <img src="assets/icons/home-icon.png" alt="">
+                        <span>Ana Səhifə</span>
+                    </a>
+
+                    <a href="productList.html" class="offcanvas-item">
+                        <img src="assets/icons/box-icon.svg" alt="">
+                        <span>Məhsullar</span>
+                    </a>
+
+                    <a href="catalogs.html" class="offcanvas-item">
+                        <img src="assets/icons/book-icon.svg" alt="">
+                        <span>Kataloq</span>
+                    </a>
+                    <a href="aboutUs.html" class="offcanvas-item">
+                        <img src="assets/icons/info-icon.svg" alt="">
+                        <span>Haqqımızda</span>
+                    </a>
+                    <a href="blog.html" class="offcanvas-item">
+                        <img src="assets/icons/blog-icon.svg" alt="">
+                        <span>Bloq</span>
+                    </a>
+                    <a href="contact.html" class="offcanvas-item">
+                        <img src="assets/icons/contact-icon.svg" alt="">
+                        <span>Əlaqə</span>
+                    </a>
+                </div>
+
+            </div>
+            <!-- offcanvas end -->
+
+            <div class="mobile-search-input-div">
+                <input type="text" placeholder="Axtar...">
+                <img src="assets/icons/search.svg" alt="">
+            </div>
+
+        </div>
+        <!-- mobile search end -->
 
         <!-- login start -->
         <div class="login-container">
