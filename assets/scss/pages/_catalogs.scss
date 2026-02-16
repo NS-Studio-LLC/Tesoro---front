@@ -2,11 +2,18 @@
 
 .catalogs-page-container {
 
+
     .catalog-filters {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 24px;
+
+        .btn-active{
+            background-color: green !important;
+            background-image: none;
+        }
+
     }
 
     .catalogs {

@@ -18,3 +18,13 @@ new Swiper("#productSwiper", {
     1200: { slidesPerView: 4, spaceBetween: 22 },
   },
 });
+
+var swiper = new Swiper(".categorySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

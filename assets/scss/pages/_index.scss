@@ -6,11 +6,6 @@
     .hero-container {
         position: relative;
 
-        img {
-            object-fit: contain;
-            width: 100%;
-        }
-
     }
 
     .our-categories {
@@ -70,7 +65,7 @@
         }
     }
 
-    .swiper-section {
+    .product-swiper-section {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -90,7 +85,6 @@
 
             .product-swiper {
                 margin-top: 50px;
-
             }
         }
 

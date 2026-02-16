@@ -4,9 +4,9 @@
 
     .filters-container {
         padding: 10px 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         gap: 12px;
 
         @include mq(tablet-portrait-up) {
@@ -15,7 +15,7 @@
         }
 
         select {
-            flex-grow: 1;
+            // flex-grow: 1;
 
             @include mq(tablet-portrait-up) {
                 width: 100%;

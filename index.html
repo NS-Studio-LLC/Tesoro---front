@@ -259,7 +259,25 @@
     <!-- hero start -->
     <div class="hero-container">
 
-        <img src="assets/images/hero.png" alt="">
+        <div class="hero-swiper-container">
+
+            <div class="swiper heroSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/images/hero-img.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/images/hero-img2.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="assets/images/bedroom.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
 
     </div>
     <!-- hero end -->
@@ -269,45 +287,56 @@
 
         <div class="categories">
 
-            <a href="#" class="category-div">
-                <div class="category-img">
-                    <img src="assets/images/combii.png" alt="">
+            <div class="swiper categorySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="category-div">
+                            <div class="category-img">
+                                <img src="assets/images/combii.png" alt="">
+                            </div>
+
+                            <span class="category-name">Kombi</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="category-div">
+                            <div class="category-img">
+                                <img src="assets/images/mask.png" alt="">
+                            </div>
+
+                            <span class="category-name">Oboy</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="category-div">
+                            <div class="category-img">
+                                <img src="assets/images/rectanglee.png" alt="">
+                            </div>
+
+                            <span class="category-name">Laminat</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="category-div">
+                            <div class="category-img">
+                                <img src="assets/images/kafel.png" alt="">
+                            </div>
+
+                            <span class="category-name">Kafel</span>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="category-div">
+                            <div class="category-img">
+                                <img src="assets/images/door.png    " alt="">
+                            </div>
+
+                            <span class="category-name">Qapı</span>
+                        </a>
+                    </div>
                 </div>
-
-                <span class="category-name">Kombi</span>
-            </a>
-
-            <a href="#" class="category-div">
-                <div class="category-img">
-                    <img src="assets/images/mask.png" alt="">
-                </div>
-
-                <span class="category-name">Oboy</span>
-            </a>
-
-            <a href="#" class="category-div">
-                <div class="category-img">
-                    <img src="assets/images/rectanglee.png" alt="">
-                </div>
-
-                <span class="category-name">Laminat</span>
-            </a>
-
-            <a href="#" class="category-div">
-                <div class="category-img">
-                    <img src="assets/images/kafel.png" alt="">
-                </div>
-
-                <span class="category-name">Kafel</span>
-            </a>
-
-            <a href="#" class="category-div">
-                <div class="category-img">
-                    <img src="assets/images/door.png    " alt="">
-                </div>
-
-                <span class="category-name">Qapı</span>
-            </a>
+                <div class="swiper-pagination"></div>
+            </div>
 
         </div>
 
@@ -315,7 +344,7 @@
     <!-- our-categories end -->
 
     <!-- products swiper start -->
-    <div class="swiper-section">
+    <div class="product-swiper-section">
 
         <span class="section-title">Məhsullar</span>
 
@@ -338,7 +367,7 @@
                             </div>
 
                             <div class="infos">
-                                <p class="title">Seyf qapı</p>
+                                <p class="title">Seyf qapı Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, molestiae.</p>
                                 <p class="old-price">399,99 ₼</p>
                                 <p class="new-price">299,99 ₼</p>
                             </div>
@@ -705,9 +734,9 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
     <script src="assets/js/searchInput.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/heroSwiper.js"></script>
 </body>
 
 </html>
