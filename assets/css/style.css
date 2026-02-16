@@ -571,8 +571,11 @@ nav .nav-links .active {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 36px;
-  color: #000;
+  color: #fff;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px;
+  border-radius: 12px;
 }
 @media only screen and (max-width: 768px) {
   .catalog-card .catalog-title {
@@ -1579,7 +1582,13 @@ nav .nav-links .active {
 }
 @media only screen and (max-width: 768px) {
   .product-list-container .filters-container {
-    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .product-list-container .filters-container {
+    grid-template-columns: repeat(1, 1fr);
     padding: 10px 24px;
   }
 }

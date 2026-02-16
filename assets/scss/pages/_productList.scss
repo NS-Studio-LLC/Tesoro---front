@@ -4,18 +4,21 @@
 
     .filters-container {
         padding: 10px 80px;
-
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 12px;
 
         @include mq(tablet-portrait-up) {
-            flex-direction: column;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 10px 24px;
+        }
+
+        @include mq(phone-only) {
+            grid-template-columns: repeat(1, 1fr);
             padding: 10px 24px;
         }
 
         select {
-            // flex-grow: 1;
 
             @include mq(tablet-portrait-up) {
                 width: 100%;
