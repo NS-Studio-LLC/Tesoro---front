@@ -1,5 +1,3 @@
-// Product Card (slide içindəki kart)
-
 .product-card {
     background: #fff;
     border-radius: 18px;
@@ -10,13 +8,9 @@
     flex-direction: column;
     align-items: center;
 
+
     div {
         width: 100%;
-    }
-
-    img {
-        width: 24px;
-        height: 24px;
     }
 
     .fav-btn {
@@ -30,6 +24,11 @@
         cursor: pointer;
         display: grid;
         place-items: center;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
     }
 
     .img-wrap {

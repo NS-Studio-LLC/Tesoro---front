@@ -369,10 +369,6 @@ nav .nav-links .active {
 .product-card div {
   width: 100%;
 }
-.product-card img {
-  width: 24px;
-  height: 24px;
-}
 .product-card .fav-btn {
   position: absolute;
   top: 12px;
@@ -384,6 +380,10 @@ nav .nav-links .active {
   cursor: pointer;
   display: grid;
   place-items: center;
+}
+.product-card .fav-btn img {
+  width: 24px;
+  height: 24px;
 }
 .product-card .img-wrap {
   width: 90%;
