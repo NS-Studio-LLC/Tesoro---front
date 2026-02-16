@@ -28,3 +28,13 @@ var swiper = new Swiper(".categorySwiper", {
     clickable: true,
   },
 });
+
+var swiper = new Swiper(".heroSwiper", {
+  slidesPerView: 1,
+  loop: true,
+  speed: 100,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+});
