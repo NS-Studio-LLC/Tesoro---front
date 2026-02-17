@@ -4,8 +4,8 @@ new Swiper("#productSwiper", {
   speed: 500,
   loop: false,
   navigation: {
-    nextEl: ".nav-next",
-    prevEl: ".nav-prev",
+    nextEl: ".prod-next",
+    prevEl: ".prod-prev",
   },
   pagination: {
     el: ".swiper-pagination",
@@ -20,9 +20,14 @@ new Swiper("#productSwiper", {
 });
 
 var swiper = new Swiper(".categorySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 30,
-  freeMode: true,
+  speed: 500,
+  loop: false,
+  navigation: {
+    nextEl: ".cat-next",
+    prevEl: ".cat-prev",
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
