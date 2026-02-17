@@ -29,6 +29,11 @@
             width: 24px;
             height: 24px;
         }
+
+        @include mq(tablet-portrait-up){
+            width: 32px;
+            height: 32px;
+        }
     }
 
     .img-wrap {

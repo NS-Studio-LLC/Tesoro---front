@@ -31,6 +31,12 @@
 
     .offcanvas-body {
 
+        .active {
+            span {
+                color: #b08808 !important;
+            }
+        }
+
         display: flex;
         flex-direction: column;
 
@@ -70,6 +76,9 @@
             span {
                 font-weight: 500;
             }
+
         }
+
+
     }
 }
