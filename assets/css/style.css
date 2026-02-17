@@ -497,7 +497,7 @@ nav .nav-links .active {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
-  margin-top: 24px;
+  margin-top: 12px;
   color: #000;
 }
 .blog-card .blog-body .btn-pass {
@@ -578,7 +578,7 @@ nav .nav-links .active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 36px;
+  font-size: 24px;
   color: #fff;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.6);
@@ -587,12 +587,12 @@ nav .nav-links .active {
 }
 @media only screen and (max-width: 768px) {
   .catalog-card .catalog-title {
-    font-size: 24px;
+    font-size: 16px !important;
   }
 }
 @media only screen and (max-width: 480px) {
   .catalog-card .catalog-title {
-    font-size: 20px;
+    font-size: 12px !important;
   }
 }
 .catalog-card img {
@@ -731,16 +731,18 @@ nav .nav-links .active {
   text-wrap: nowrap;
   width: -moz-fit-content;
   width: fit-content;
+  display: flex;
+  align-items: center;
 }
 @media only screen and (max-width: 768px) {
   .btn-more {
-    font-size: 12px;
+    font-size: 12px !important;
     padding: 8px;
   }
 }
 @media only screen and (max-width: 480px) {
   .btn-more {
-    font-size: 10px;
+    font-size: 10px !important;
     padding: 6px;
   }
 }
@@ -1639,6 +1641,11 @@ nav .nav-links .active {
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
 }
+@media only screen and (max-width: 1200px) {
+  .blogs-list-container .blogs-container .blogs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media only screen and (max-width: 768px) {
   .blogs-list-container .blogs-container {
     padding: 20px 25px;
@@ -1894,14 +1901,6 @@ nav .nav-links .active {
     display: flex !important;
   }
 }
-.blog-details-page-container .blog-details .blog-header .header-details .header-actions .copy {
-  display: none !important;
-}
-@media only screen and (min-width: 768px) {
-  .blog-details-page-container .blog-details .blog-header .header-details .header-actions .copy {
-    display: flex !important;
-  }
-}
 .blog-details-page-container .blog-details .blog-header .header-details .header-actions .copy-btn {
   position: relative;
   border: 0;
@@ -1910,6 +1909,12 @@ nav .nav-links .active {
   color: #000;
   padding: 6px;
   border-radius: 8px;
+  display: none !important;
+}
+@media only screen and (min-width: 768px) {
+  .blog-details-page-container .blog-details .blog-header .header-details .header-actions .copy-btn {
+    display: flex !important;
+  }
 }
 .blog-details-page-container .blog-details .blog-header .header-details .header-actions .copy-btn:hover {
   background: rgba(0, 0, 0, 0.06);
@@ -2098,6 +2103,11 @@ nav .nav-links .active {
   font-weight: 200;
   margin-bottom: 8px;
 }
+@media only screen and (max-width: 768px) {
+  .contact-us-container .contact-us .form-title {
+    font-size: 24px;
+  }
+}
 .contact-us-container .contact-us .contact-form {
   width: 50%;
   display: flex;
@@ -2117,6 +2127,11 @@ nav .nav-links .active {
   border-radius: 12px;
   width: 100%;
 }
+@media only screen and (max-width: 768px) {
+  .contact-us-container .contact-us .contact-form input {
+    font-size: 10px;
+  }
+}
 .contact-us-container .contact-us .contact-form textarea {
   padding: 12px;
   background-color: transparent;
@@ -2126,8 +2141,18 @@ nav .nav-links .active {
   width: 100%;
   height: 200px;
 }
+@media only screen and (max-width: 768px) {
+  .contact-us-container .contact-us .contact-form textarea {
+    font-size: 10px;
+  }
+}
 .contact-us-container .contact-us .contact-form .form-button {
   width: 25%;
+}
+@media only screen and (max-width: 768px) {
+  .contact-us-container .contact-us .contact-form .form-button {
+    font-size: 12px;
+  }
 }
 .contact-us-container .contact-us .contact-infos {
   display: flex;
@@ -2145,6 +2170,11 @@ nav .nav-links .active {
   font-size: 14px;
   padding-bottom: 12px;
   border-bottom: 1px solid #d4d4d4;
+}
+@media only screen and (max-width: 768px) {
+  .contact-us-container .contact-us .contact-infos .info-div {
+    font-size: 12px;
+  }
 }
 
 .catalogs-page-container .catalog-filters {
@@ -2333,17 +2363,34 @@ nav .nav-links .active {
   justify-content: center;
   color: #000;
 }
-.product-details-page .similar-products-container .similar-products .section-body {
-  padding: 0 50px;
+.product-details-page .similar-products-container .similar-products .section-body .product-swiper-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.product-details-page .similar-products-container .similar-products .section-body .swiper-container {
+.product-details-page .similar-products-container .similar-products .section-body .product-swiper-section .section-title {
+  font-size: 36px;
+  align-self: flex-start;
+  margin-left: 30px;
+}
+.product-details-page .similar-products-container .similar-products .section-body .product-swiper-section .swiper-container {
   padding: 24px 24px 40px;
   padding: 0;
   position: relative;
   width: 95%;
 }
-.product-details-page .similar-products-container .similar-products .section-body .swiper-container .product-swiper {
+.product-details-page .similar-products-container .similar-products .section-body .product-swiper-section .swiper-container .product-swiper {
   margin-top: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .product-details-page .similar-products-container .similar-products .section-body .product-swiper-section .section-title {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .product-details-page .similar-products-container .similar-products .section-body .product-swiper-section .swiper-container {
+    display: none;
+  }
 }
 
 .product-gallery {

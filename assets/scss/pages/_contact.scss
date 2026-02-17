@@ -17,6 +17,10 @@
             font-size: 32px;
             font-weight: 200;
             margin-bottom: 8px;
+
+            @include mq(tablet-portrait-up) {
+                font-size: 24px;
+            }
         }
 
         .contact-form {
@@ -36,6 +40,10 @@
                 border: 1px solid #d4d4d4;
                 border-radius: 12px;
                 width: 100%;
+
+                @include mq(tablet-portrait-up) {
+                    font-size: 10px;
+                }
             }
 
             textarea {
@@ -46,10 +54,19 @@
                 border-radius: 12px;
                 width: 100%;
                 height: 200px;
+
+                @include mq(tablet-portrait-up) {
+                    font-size: 10px;
+                }
             }
 
             .form-button {
                 width: 25%;
+
+
+                @include mq(tablet-portrait-up) {
+                    font-size: 12px;
+                }
             }
         }
 
@@ -68,6 +85,10 @@
                 font-size: 14px;
                 padding-bottom: 12px;
                 border-bottom: 1px solid #d4d4d4;
+
+                @include mq(tablet-portrait-up) {
+                    font-size: 12px;
+                }
             }
         }
     }

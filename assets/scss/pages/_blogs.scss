@@ -12,6 +12,13 @@
             gap: 32px;
         }
 
+        @include mq(desktop-up) {
+
+            .blogs {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
         @include mq(tablet-portrait-up) {
             padding: 20px 25px;
 

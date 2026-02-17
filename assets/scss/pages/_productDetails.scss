@@ -184,17 +184,41 @@
             }
 
             .section-body {
-                padding: 0 50px;
 
-                .swiper-container {
-                    padding: 24px 24px 40px;
-                    padding: 0;
-                    position: relative;
-                    width: 95%;
+                .product-swiper-section {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
 
-                    .product-swiper {
-                        margin-top: 50px;
+                    .section-title {
+                        font-size: 36px;
+                        align-self: flex-start;
+                        margin-left: 30px;
                     }
+
+                    .swiper-container {
+                        padding: 24px 24px 40px;
+                        padding: 0;
+                        position: relative;
+                        width: 95%;
+
+                        .product-swiper {
+                            margin-top: 50px;
+                        }
+                    }
+
+                    @include mq(tablet-portrait-up) {
+                        .section-title {
+                            font-size: 22px;
+                            font-weight: 500;
+                        }
+
+                        .swiper-container {
+                            display: none;
+                        }
+                    }
+
                 }
             }
         }

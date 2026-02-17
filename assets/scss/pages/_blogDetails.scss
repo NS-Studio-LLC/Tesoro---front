@@ -137,14 +137,6 @@
                             }
                         }
 
-                        .copy {
-                            display: none !important;
-
-                            @include mq(tablet-portrait-down) {
-                                display: flex !important;
-                            }
-                        }
-
                         .copy-btn {
                             position: relative;
                             border: 0;
@@ -154,11 +146,16 @@
                             padding: 6px;
                             border-radius: 8px;
 
+                            display: none !important;
+
+                            @include mq(tablet-portrait-down) {
+                                display: flex !important;
+                            }
+
                             &:hover {
                                 background: rgba(0, 0, 0, 0.06);
                             }
 
-                            // Tooltip bubble
                             &::after {
                                 content: attr(data-tooltip);
                                 position: absolute;
@@ -178,7 +175,6 @@
                                 transition: opacity 0.15s ease, transform 0.15s ease;
                             }
 
-                            // Tooltip arrow
                             &::before {
                                 content: "";
                                 position: absolute;

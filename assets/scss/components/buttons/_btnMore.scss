@@ -9,14 +9,16 @@
     border: none;
     text-wrap: nowrap;
     width: fit-content;
+    display: flex;
+    align-items: center;
 
     @include mq(tablet-portrait-up) {
-        font-size: 12px;
+        font-size: 12px !important;
         padding: 8px;
     }
 
     @include mq(phone-only) {
-        font-size: 10px;
+        font-size: 10px !important;
         padding: 6px;
     }
 
