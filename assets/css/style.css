@@ -1530,14 +1530,16 @@ nav .nav-links .active {
 .homepage-container .house-and-decoration {
   padding: 40px 30px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
-.homepage-container .house-and-decoration .section-left {
+.homepage-container .house-and-decoration .section-header {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  align-items: center;
+  gap: 16px;
 }
-.homepage-container .house-and-decoration .section-left .section-title {
+.homepage-container .house-and-decoration .section-header .section-title {
   font-size: 32px;
   font-weight: 600;
   width: -moz-fit-content;
@@ -1545,70 +1547,46 @@ nav .nav-links .active {
   border-bottom: 1px solid black;
 }
 @media only screen and (max-width: 768px) {
-  .homepage-container .house-and-decoration .section-left .section-title {
+  .homepage-container .house-and-decoration .section-header .section-title {
     font-size: 18px;
   }
 }
 @media only screen and (max-width: 480px) {
-  .homepage-container .house-and-decoration .section-left .section-title {
+  .homepage-container .house-and-decoration .section-header .section-title {
     font-size: 18px;
   }
 }
-.homepage-container .house-and-decoration .section-left .btn-more {
+.homepage-container .house-and-decoration .section-header .header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.homepage-container .house-and-decoration .section-header .header-actions .btn-more {
   min-width: 100px;
 }
-.homepage-container .house-and-decoration .section-left .product-images {
+.homepage-container .house-and-decoration .section-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homepage-container .house-and-decoration .section-body .product-images {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-top: 12px;
 }
 @media only screen and (max-width: 1024px) {
-  .homepage-container .house-and-decoration .section-left .product-images {
+  .homepage-container .house-and-decoration .section-body .product-images {
     display: none;
   }
 }
-.homepage-container .house-and-decoration .section-left .product-images .product-img {
+.homepage-container .house-and-decoration .section-body .product-images .product-img {
   width: 140px;
   height: 140px;
   border-radius: 12px;
   overflow: hidden;
 }
-.homepage-container .house-and-decoration .section-left .product-images .product-img img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.homepage-container .house-and-decoration .btn-more-div {
-  display: flex;
-}
-.homepage-container .house-and-decoration .btn-more-div .btn-more {
-  margin-top: auto;
-}
-.homepage-container .house-and-decoration .section-right {
-  display: flex;
-}
-.homepage-container .house-and-decoration .section-right .img-div {
-  width: 315px;
-  height: 380px;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-left: auto;
-}
-@media only screen and (max-width: 1024px) {
-  .homepage-container .house-and-decoration .section-right .img-div {
-    width: 200px;
-    height: 210px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .homepage-container .house-and-decoration .section-right .img-div {
-    width: 120px;
-    height: 130px;
-  }
-}
-.homepage-container .house-and-decoration .section-right .img-div img {
+.homepage-container .house-and-decoration .section-body .product-images .product-img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
