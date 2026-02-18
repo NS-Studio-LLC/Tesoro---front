@@ -1604,21 +1604,30 @@ nav .nav-links .active {
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  padding: 50px 20px 200px 20px;
+  padding: 50px 100px 200px 100px;
 }
 @media only screen and (max-width: 768px) {
   .homepage-container .our-catalogs {
-    padding-bottom: 50px;
+    padding: 50px 20px 50px 20px;
   }
 }
 .homepage-container .our-catalogs .section-title {
   font-size: 36px;
 }
 .homepage-container .our-catalogs .catalogs {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .homepage-container .our-catalogs .catalogs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .homepage-container .our-catalogs .catalogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media only screen and (max-width: 768px) {
   .homepage-container .our-catalogs .catalogs .catalog-card {
