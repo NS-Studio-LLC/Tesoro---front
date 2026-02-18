@@ -4,7 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  background-color: #efefef;
+  background-color: #fff;
 }
 
 p {
@@ -14,7 +14,6 @@ p {
 a {
   text-decoration: none;
   color: #000;
-  -webkit-text-fill-color: #111;
 }
 
 input {
@@ -38,9 +37,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  position: sticky;
+  top: 60px;
+  z-index: 9;
+  background: transparent;
   border-top: 2px solid #dedede;
   border-bottom: 1px solid #dedede;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 @media only screen and (max-width: 768px) {
   header {
@@ -234,6 +238,9 @@ footer .footer-right .actions a {
   display: flex;
   justify-content: center;
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 9;
 }
 .topbar .logo {
   height: 60px;
@@ -696,6 +703,7 @@ nav .nav-links .active {
   overflow: hidden;
   transition: width 0.25s ease;
   box-shadow: 0px 0px 10px -5px #000000;
+  background-color: #fff;
 }
 @media only screen and (max-width: 768px) {
   .header-search-div {
@@ -737,7 +745,7 @@ nav .nav-links .active {
   border-radius: 12px;
   border: none;
   background-color: #977300;
-  color: #fff;
+  color: #fff !important;
   font-size: 16px;
 }
 
@@ -777,6 +785,8 @@ nav .nav-links .active {
 
 .black {
   background-color: #000;
+  -moz-column-rule: #fff;
+       column-rule: #fff;
 }
 
 .desktop-menu-dropdown {

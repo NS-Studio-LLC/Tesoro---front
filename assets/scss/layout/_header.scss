@@ -5,14 +5,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+
+    position: sticky;
+    top: 60px;
+    z-index: 9;
+
+    background: transparent;
     border-top: 2px solid #dedede;
     border-bottom: 1px solid #dedede;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
 
     @include mq(tablet-portrait-up) {
         padding: 12px 20px;
 
-        .desktop-menu-dropdown{
+        .desktop-menu-dropdown {
             display: none;
         }
     }
@@ -104,8 +112,8 @@ header {
 
     }
 
-    .header-offcanvas-btn{
-        @include mq(tablet-portrait-down){
+    .header-offcanvas-btn {
+        @include mq(tablet-portrait-down) {
             display: none;
         }
     }
