@@ -35,8 +35,8 @@
         @include mq(tablet-portrait-up) {
 
             img {
-                width: 32px;
-                height: 32px;
+                width: 28px;
+                height: 28px;
             }
 
         }
@@ -47,6 +47,10 @@
         height: 250px !important;
         overflow: hidden;
         border-radius: 16px;
+
+        @include mq(tablet-portrait-up){
+            height: 120px !important;
+        }
 
         img {
             object-fit: contain;
