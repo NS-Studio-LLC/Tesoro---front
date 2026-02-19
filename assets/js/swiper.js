@@ -20,7 +20,7 @@ new Swiper("#productSwiper", {
 });
 
 var swiper = new Swiper(".categorySwiper", {
-  slidesPerView: 4,
+  slidesPerView: 2,
   spaceBetween: 30,
   speed: 500,
   loop: false,
@@ -32,7 +32,13 @@ var swiper = new Swiper(".categorySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    576: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    992: { slidesPerView: 4 },
+  }
 });
+
 
 var swiper = new Swiper(".heroSwiper", {
   slidesPerView: 1,

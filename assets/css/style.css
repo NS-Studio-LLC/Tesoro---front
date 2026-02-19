@@ -1159,6 +1159,9 @@ nav .nav-links .active {
   }
 }
 
+.hero-swiper-container {
+  height: 546px;
+}
 @media only screen and (max-width: 768px) {
   .hero-swiper-container {
     height: 200px;

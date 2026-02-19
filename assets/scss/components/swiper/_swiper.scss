@@ -157,6 +157,8 @@
 
 .hero-swiper-container {
 
+    height: 546px;
+
     @include mq(tablet-portrait-up){
         height: 200px;
     }
